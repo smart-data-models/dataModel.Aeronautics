@@ -1,0 +1,30 @@
+description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
+contributors:
+-
+ name: Álvaro
+ surname: Alonso
+ mail: alvaro.alonso@upm.es
+ organization: Departamento de Ingeniería de Sistemas Telemáticos, Escuela Técnica Superior de Ingenieros de Telecomunicación, Universidad Politécnica de Madrid
+ project:
+ comments:
+-
+ name: Javier
+ surname: Conde
+ mail: javier.conde.diaz@alumnos.upm.es
+ organization: Departamento de Ingeniería de Sistemas Telemáticos, Escuela Técnica Superior de Ingenieros de Telecomunicación, Universidad Politécnica de Madrid
+ project:
+ comments:
+-
+ name: Andrés
+ surname: Munoz-Arcentales
+ mail:
+ organization: Departamento de Ingeniería de Sistemas Telemáticos, Escuela Técnica Superior de Ingenieros de Telecomunicación, Universidad Politécnica de Madrid
+ project:
+ comments:
+-
+ name: Javier
+ surname: Rojo Muñoz
+ mail:
+ organization: Fundación Centro de Innovación de Infraestructuras Inteligentes
+ project: A/RPORTWIN. AR/VR for digital twins in airports and other infrastructures using FIWARE platform
+ comments:

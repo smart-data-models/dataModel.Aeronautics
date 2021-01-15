@@ -1,7 +1,7 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
 -
- name: Álvaro
+ name: Alvaro
  surname: Alonso
  mail: alvaro.alonso@upm.es
  organization: Departamento de Ingeniería de Sistemas Telemáticos, Escuela Técnica Superior de Ingenieros de Telecomunicación, Universidad Politécnica de Madrid
@@ -15,7 +15,7 @@ contributors:
  project:
  comments:
 -
- name: Andrés
+ name: Andres
  surname: Munoz-Arcentales
  mail:
  organization: Departamento de Ingeniería de Sistemas Telemáticos, Escuela Técnica Superior de Ingenieros de Telecomunicación, Universidad Politécnica de Madrid

@@ -1,20 +1,56 @@
 {
-    "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
-    "type": "AircraftModel",
-    "codeIATA": "312",
-    "codeICAO": "A310",
-    "name": "Airbus A310-200",
-    "length": 46.66,
-    "wingSpan": 43.9,
-    "height": 15.8,
-    "mtow": 144000,
-    "maximumAllowedSpeed": 850,
-    "maximumAllowedFuel": 47940,
-    "ceiling": 12527,
-    "numberOfEngines": 4,
-    "capacity": 150,
-    "@context": [
-        "https://schema.lab.fiware.org/ld/context",
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
+  "type": "AircraftModel",
+  "codeIATA": {
+    "type": "Property",
+    "value": "312"
+  },
+  "codeICAO": {
+    "type": "Property",
+    "value": "A310"
+  },
+  "name": {
+    "type": "Property",
+    "value": "Airbus A310-200"
+  },
+  "length": {
+    "type": "Property",
+    "value": 46.66
+  },
+  "wingSpan": {
+    "type": "Property",
+    "value": 43.9
+  },
+  "height": {
+    "type": "Property",
+    "value": 15.8
+  },
+  "mtow": {
+    "type": "Property",
+    "value": 144000
+  },
+  "maximumAllowedSpeed": {
+    "type": "Property",
+    "value": 850
+  },
+  "maximumAllowedFuel": {
+    "type": "Property",
+    "value": 47940
+  },
+  "ceiling": {
+    "type": "Property",
+    "value": 12527
+  },
+  "numberOfEngines": {
+    "type": "Property",
+    "value": 4
+  },
+  "capacity": {
+    "type": "Property",
+    "value": 150
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld",
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+  ]
 }

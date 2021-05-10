@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0",
+    "$schemaVersion": "0.0.1",
     "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/AircraftModel/schema.json",
     "title": "Smart Data models - Aircraft schema",
     "description": "A description of a generic aircraft model",

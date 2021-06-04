@@ -1,46 +1,46 @@
-Entité : Notification de vol  
-============================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/FlightNotification/LICENSE.md)  
-Description globale : **Description d'une notification de vol générique  
+Entité : FlightNotification  
+===========================  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/FlightNotification/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Description globale : **Description d'une notification de vol générique**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `belongsToFlight`: Référence à l'entité de vol  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateIssued`: Date à laquelle la notification a été créée  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `state`: État actuel de la notification du vol. Enum : "actif, inactif, terminé, inconnu".  - `type`: Type d'entité NGSI. Il doit s'agir de FlightNotification    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `belongsToFlight`: Référence à l'entité de vol  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateIssued`: Date à laquelle la notification a été créée  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `state`: État actuel de la notification de vol. Enum : "active, inactive, terminée, inconnue".  - `type`: Type d'entité NGSI. Il doit s'agir de FlightNotification    
 Propriétés requises  
 - `belongsToFlight`  - `dateIssued`  - `description`  - `id`  - `type`    
-L'entité de notification de vol contient une description d'une notification générique pendant l'opération et la préparation du vol.  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+L'entité Flight Notification contient la description d'une notification générique pendant l'opération et la préparation du vol.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 FlightNotification:    
   description: 'A description of a generic flight notification'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -92,10 +92,10 @@ FlightNotification:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -115,7 +115,8 @@ FlightNotification:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +139,8 @@ FlightNotification:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -163,7 +165,8 @@ FlightNotification:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -185,7 +188,8 @@ FlightNotification:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -210,7 +214,8 @@ FlightNotification:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -237,7 +242,7 @@ FlightNotification:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -251,8 +256,8 @@ FlightNotification:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -286,8 +291,8 @@ FlightNotification:
 ```  
 </details>    
 ## Exemples de charges utiles  
-#### Notification de vol NGSI V2 valeurs clés Exemple  
-Voici un exemple de notification de vol au format JSON comme valeurs clés. Ce format est compatible avec la version 2 du NGSI lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### Notification de vol Exemple de valeurs-clés NGSI-v2  
+Voici un exemple de FlightNotification au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
     "id": "3732:2020-12-09T19:01:35.865Z",  
@@ -299,8 +304,8 @@ FlightNotification:
     "dataProvider": "Employee 001"  
 }  
 ```  
-#### Notification de vol NGSI V2 normalisée Exemple  
-Voici un exemple de notification de vol au format JSON normalisé. Ce format est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+#### Notification de vol NGSI-v2 normalisée Exemple  
+Voici un exemple d'un FlightNotification au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
     "id": "3732:2020-12-09T19:01:35.865Z",  
@@ -324,55 +329,55 @@ FlightNotification:
     }  
 }  
 ```  
-#### Notification de vol NGSI-LD valeurs clés Exemple  
-Voici un exemple de notification de vol au format JSON-LD en tant que valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### Notification de vol Valeurs-clés NGSI-LD Exemple  
+Voici un exemple de FlightNotification au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z",  
-    "type": "FlightNotification",  
-    "description": "Delay of five minutes",  
-    "state": "active",  
-    "dateIssued": "2020-12-09T19:01:35.865Z",  
-    "belongsToFlight": "urn:ngsi-ld:Flight:flight-3732",  
-    "dataProvider": "Employee 001",  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z",  
+  "type": "FlightNotification",  
+  "description": {  
+    "type": "Property",  
+    "value": "Delay of five minutes"  
+  },  
+  "state": {  
+    "type": "Property",  
+    "value": "active"  
+  },  
+  "dateIssued": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2020-12-09T19:01:35.865Z"  
+    }  
+  },  
+  "belongsToFlight": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:Flight:flight-3732"  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "Employee 001"  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
 #### Notification de vol NGSI-LD normalisée Exemple  
-Voici un exemple de notification de vol au format JSON-LD normalisé. Ce format est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple d'un FlightNotification au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z",  
-    "type": "FlightNotification",  
-    "description": {  
-        "type": "Property",  
-        "value": "Delay of five minutes"  
-    },  
-    "state": {  
-        "type": "Property",  
-        "value": "active"  
-    },  
-    "dateIssued": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2020-12-09T19:01:35.865Z"  
-        }  
-    },  
-    "belongsToFlight": {  
-        "type": "Relationship",  
-        "value": "urn:ngsi-ld:Flight:flight-3732"  
-    },  
-    "dataProvider": {  
-        "type": "Property",  
-        "value": "Employee 001"  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z",  
+  "type": "FlightNotification",  
+  "description": "Delay of five minutes",  
+  "state": "active",  
+  "dateIssued": "2020-12-09T19:01:35.865Z",  
+  "belongsToFlight": "urn:ngsi-ld:Flight:flight-3732",  
+  "dataProvider": "Employee 001",  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  

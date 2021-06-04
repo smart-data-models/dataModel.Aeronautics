@@ -1,46 +1,46 @@
 Entité : AircraftModel  
 ======================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/AircraftModel/LICENSE.md)  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/AircraftModel/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Description globale : **Description d'un modèle d'avion générique**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `capacity`: Nombre de sièges  - `ceiling`: Altitude maximale que le modèle d'avion peut atteindre en mètres  - `codeIATA`: Type d'avion IATA  - `codeICAO`: Type d'avion OACI  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `height`: Hauteur du modèle d'avion en mètres  - `id`: Identifiant unique de l'entité  - `length`: Longueur du modèle d'avion en mètres  - `location`:   - `maximumAllowedFuel`: Carburant maximal des avions en kilogrammes  - `maximumAllowedSpeed`:  Vitesse maximale des avions en kilomètres par heure  - `mtow`:  Poids maximum des avions au décollage en kilogrammes  - `name`: Le nom de cet article.  - `numberOfEngines`: Nombre de moteurs  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit s'agir d'un modèle d'avion  - `wingSpan`: Modèle d'avion en mètres d'envergure    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `capacity`: Nombre de places  - `ceiling`: Altitude maximale que le modèle d'avion peut atteindre en mètres  - `codeIATA`: Type d'avion IATA  - `codeICAO`: Type d'aéronef OACI  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `height`: Hauteur du modèle d'avion en mètres  - `id`: Identifiant unique de l'entité  - `length`: Longueur du modèle d'avion en mètres  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maximumAllowedFuel`: Carburant maximal de l'avion en kilogrammes  - `maximumAllowedSpeed`:  Vitesse maximale de l'avion en kilomètres par heure  - `mtow`:  Poids maximal de l'avion au décollage en kilogrammes  - `name`: Le nom de cet élément.  - `numberOfEngines`: Nombre de moteurs  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI. Il doit être AircraftModel  - `wingSpan`: Envergure du modèle d'avion en mètres    
 Propriétés requises  
 - `id`  - `name`  - `type`    
-L'entité AircraftModel contient une description d'un modèle d'avion générique avec les paramètres standards utilisés par l'industrie aérienne.  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+L'entité AircraftModel contient la description d'un modèle d'avion générique avec les paramètres standard utilisés par l'industrie du transport aérien.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AircraftModel:    
   description: 'A description of a generic aircraft model'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -115,10 +115,10 @@ AircraftModel:
         model: http://schema.org/Number    
         units: metres    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -138,7 +138,8 @@ AircraftModel:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -161,7 +162,8 @@ AircraftModel:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +188,8 @@ AircraftModel:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -208,7 +211,8 @@ AircraftModel:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -233,7 +237,8 @@ AircraftModel:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -260,7 +265,7 @@ AircraftModel:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maximumAllowedFuel:    
       description: 'Aircraft maximum fuel in kilograms'    
       minimum: 0    
@@ -301,8 +306,8 @@ AircraftModel:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -331,8 +336,8 @@ AircraftModel:
 ```  
 </details>    
 ## Exemples de charges utiles  
-#### AircraftModel NGSI V2 key-values Example  
-Voici un exemple de modèle d'avion au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### AircraftModel Valeurs-clés NGSI-v2 Exemple  
+Voici un exemple d'un AircraftModel au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
     "id": "aircraftModel-AirbusA310-200",  
@@ -351,8 +356,8 @@ AircraftModel:
     "capacity": 150  
 }  
 ```  
-#### AircraftModel NGSI V2 normalisé Exemple  
-Voici un exemple de modèle d'avion au format JSON normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+#### AircraftModel NGSI-v2 normalisé Exemple  
+Voici un exemple d'un AircraftModel au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
     "id": "aircraftModel-AirbusA310-200",  
@@ -395,87 +400,87 @@ AircraftModel:
     }  
 }  
 ```  
-#### AircraftModel NGSI-LD key-values Example  
-Voici un exemple de modèle d'avion au format JSON-LD comme valeurs clés. Ce modèle est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### AircraftModel Valeurs-clés NGSI-LD Exemple  
+Voici un exemple d'un AircraftModel au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
-    "type": "AircraftModel",  
-    "codeIATA": "312",  
-    "codeICAO": "A310",  
-    "name": "Airbus A310-200",  
-    "length": 46.66,  
-    "wingSpan": 43.9,  
-    "height": 15.8,  
-    "mtow": 144000,  
-    "maximumAllowedSpeed": 850,  
-    "maximumAllowedFuel": 47940,  
-    "ceiling": 12527,  
-    "numberOfEngines": 4,  
-    "capacity": 150,  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
+  "type": "AircraftModel",  
+  "codeIATA": {  
+    "type": "Property",  
+    "value": "312"  
+  },  
+  "codeICAO": {  
+    "type": "Property",  
+    "value": "A310"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "Airbus A310-200"  
+  },  
+  "length": {  
+    "type": "Property",  
+    "value": 46.66  
+  },  
+  "wingSpan": {  
+    "type": "Property",  
+    "value": 43.9  
+  },  
+  "height": {  
+    "type": "Property",  
+    "value": 15.8  
+  },  
+  "mtow": {  
+    "type": "Property",  
+    "value": 144000  
+  },  
+  "maximumAllowedSpeed": {  
+    "type": "Property",  
+    "value": 850  
+  },  
+  "maximumAllowedFuel": {  
+    "type": "Property",  
+    "value": 47940  
+  },  
+  "ceiling": {  
+    "type": "Property",  
+    "value": 12527  
+  },  
+  "numberOfEngines": {  
+    "type": "Property",  
+    "value": 4  
+  },  
+  "capacity": {  
+    "type": "Property",  
+    "value": 150  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  
 #### AircraftModel NGSI-LD normalisé Exemple  
-Voici un exemple de modèle d'avion au format JSON-LD tel que normalisé. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple d'un AircraftModel au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
-    "type": "AircraftModel",  
-    "codeIATA": {  
-        "type": "Property",  
-        "value": "312"  
-    },  
-    "codeICAO": {  
-        "type": "Property",  
-        "value": "A310"  
-    },  
-    "name": {  
-        "type": "Property",  
-        "value": "Airbus A310-200"  
-    },  
-    "length": {  
-        "type": "Property",  
-        "value": 46.66  
-    },  
-    "wingSpan": {  
-        "type": "Property",  
-        "value": 43.9  
-    },  
-    "height": {  
-        "type": "Property",  
-        "value": 15.8  
-    },  
-    "mtow": {  
-        "type": "Property",  
-        "value": 144000  
-    },  
-    "maximumAllowedSpeed": {  
-        "type": "Property",  
-        "value": 850  
-    },  
-    "maximumAllowedFuel": {  
-        "type": "Property",  
-        "value": 47940  
-    },  
-    "ceiling": {  
-        "type": "Property",  
-        "value": 12527  
-    },  
-    "numberOfEngines": {  
-        "type": "Property",  
-        "value": 4  
-    },  
-    "capacity": {  
-        "type": "Property",  
-        "value": 150  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
+  "type": "AircraftModel",  
+  "codeIATA": "312",  
+  "codeICAO": "A310",  
+  "name": "Airbus A310-200",  
+  "length": 46.66,  
+  "wingSpan": 43.9,  
+  "height": 15.8,  
+  "mtow": 144000,  
+  "maximumAllowedSpeed": 850,  
+  "maximumAllowedFuel": 47940,  
+  "ceiling": 12527,  
+  "numberOfEngines": 4,  
+  "capacity": 150,  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
 }  
 ```  

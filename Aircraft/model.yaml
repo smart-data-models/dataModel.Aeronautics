@@ -22,17 +22,21 @@ Aircraft:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     belongsToAircraftModel:
       anyOf:
         - maxLength: 256
@@ -42,32 +46,43 @@ Aircraft:
         - format: uri
           type: string
       description: 'Reference to the aircraft model entity'
-      type: Relationship
+      x-ngsi:
+        type: Relationship
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateIssued:
       description: 'Date when the meassure was taken'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: http://schema.org/DateTime
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     heading:
       description: 'Current aircraft heading in degrees. Untis: ''degrees'''
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
     id:
       anyOf: &aircraft_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -79,12 +94,14 @@ Aircraft:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     isOnGround:
       description: 'Logical indicator that determines if an aircraft is on ground'
-      type: Property
+      type: boolean
       x-ngsi:
         model: http://schema.org/Boolean
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -236,22 +253,28 @@ Aircraft:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      type: Geoproperty
+      x-ngsi:
+        type: Geoproperty
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *aircraft_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     registration:
       description: 'Tail number or aircraft registration'
       pattern: ^[A-Z]-[A-Z]{4}|[A-Z]{2}-[A-Z]{3}|[A-Z]{5}|N[0-9]{1,5}[A-Z]{0,2}$
-      type: Property
+      type: string
       x-ngsi:
         model: http://schema.org/Text
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -262,26 +285,33 @@ Aircraft:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     speed:
       description: 'Current aircraft speed in kilometres per hour'
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
         units: 'kilometres per hour'
     type:
       description: 'NGSI Entity type. It has to be Aircraft'
       enum:
         - Aircraft
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     verticalSpeed:
       description: 'Current vertical aircraft speed in metres per second'
-      type: Property
+      type: number
       x-ngsi:
         model: http://schema.org/Number
+        type: Property
         units: 'metres per second'
   required:
     - id

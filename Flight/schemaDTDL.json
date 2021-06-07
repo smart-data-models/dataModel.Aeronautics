@@ -1,0 +1,528 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Flight;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models - Flight schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/Flight/schema.json",
+    "description": "A description of a generic flight",
+    "displayName": "Flight",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "arrivesToAirport",
+            "writable": true,
+            "displayName": "arrivesToAirport"
+        },
+        {
+            "name": "belongsToAirline",
+            "writable": true,
+            "displayName": "belongsToAirline"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateAIBT",
+            "writable": true,
+            "displayName": "dateAIBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Actual In-Block Time"
+        },
+        {
+            "name": "dateALDT",
+            "writable": true,
+            "displayName": "dateALDT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Actual Landing Time"
+        },
+        {
+            "name": "dateAOBT",
+            "writable": true,
+            "displayName": "dateAOBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Actual Off-Block Time"
+        },
+        {
+            "name": "dateATO",
+            "writable": true,
+            "displayName": "dateATO",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Actual Time Over"
+        },
+        {
+            "name": "dateATOT",
+            "writable": true,
+            "displayName": "dateATOT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Actual Take-Off Time"
+        },
+        {
+            "name": "dateAXIT",
+            "writable": true,
+            "displayName": "dateAXIT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Actual Taxi-In Time"
+        },
+        {
+            "name": "dateAXOT",
+            "writable": true,
+            "displayName": "dateAXOT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Actual Taxi-Out Time"
+        },
+        {
+            "name": "dateArrival",
+            "writable": true,
+            "displayName": "dateArrival",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Arrival date of the flight"
+        },
+        {
+            "name": "dateCIBT",
+            "writable": true,
+            "displayName": "dateCIBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Calculated In-Block Time"
+        },
+        {
+            "name": "dateCLDT",
+            "writable": true,
+            "displayName": "dateCLDT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Calculated Landing Time"
+        },
+        {
+            "name": "dateCOBT",
+            "writable": true,
+            "displayName": "dateCOBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Calculated Off-Block Time"
+        },
+        {
+            "name": "dateCTO",
+            "writable": true,
+            "displayName": "dateCTO",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Calculated Time Over"
+        },
+        {
+            "name": "dateCTOT",
+            "writable": true,
+            "displayName": "dateCTOT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Calculated Take-Off Time"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateDeparture",
+            "writable": true,
+            "displayName": "dateDeparture",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Departure date of the flight"
+        },
+        {
+            "name": "dateEIBT",
+            "writable": true,
+            "displayName": "dateEIBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Estimated In-Block Time"
+        },
+        {
+            "name": "dateELDT",
+            "writable": true,
+            "displayName": "dateELDT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Estimated Landing Time"
+        },
+        {
+            "name": "dateEOBT",
+            "writable": true,
+            "displayName": "dateEOBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Estimated Off-Block Time"
+        },
+        {
+            "name": "dateETO",
+            "writable": true,
+            "displayName": "dateETO",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Estimated Time Over"
+        },
+        {
+            "name": "dateETOT",
+            "writable": true,
+            "displayName": "dateETOT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Estimated Take-Off Time"
+        },
+        {
+            "name": "dateEXIT",
+            "writable": true,
+            "displayName": "dateEXIT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Estimated Taxi-In Time"
+        },
+        {
+            "name": "dateEXOT",
+            "writable": true,
+            "displayName": "dateEXOT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Estimated Taxi-Out Time"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateSIBT",
+            "writable": true,
+            "displayName": "dateSIBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Scheduled In-Block Time"
+        },
+        {
+            "name": "dateSLDT",
+            "writable": true,
+            "displayName": "dateSLDT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Scheduled Landing Time"
+        },
+        {
+            "name": "dateSOBT",
+            "writable": true,
+            "displayName": "dateSOBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Scheduled Off-Block Time"
+        },
+        {
+            "name": "dateSTOT",
+            "writable": true,
+            "displayName": "dateSTOT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Scheduled Take-Off Time"
+        },
+        {
+            "name": "dateTIBT",
+            "writable": true,
+            "displayName": "dateTIBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Target In-Block Time"
+        },
+        {
+            "name": "dateTLDT",
+            "writable": true,
+            "displayName": "dateTLDT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Target Landing Time"
+        },
+        {
+            "name": "dateTOBT",
+            "writable": true,
+            "displayName": "dateTOBT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Target Off-Block Time"
+        },
+        {
+            "name": "dateTSAT",
+            "writable": true,
+            "displayName": "dateTSAT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Target Start Up Approval Time"
+        },
+        {
+            "name": "dateTTOT",
+            "writable": true,
+            "displayName": "dateTTOT",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Target Take-Off Time"
+        },
+        {
+            "name": "departsFromAirport",
+            "writable": true,
+            "displayName": "departsFromAirport"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "flightNumber",
+            "writable": true,
+            "displayName": "flightNumber",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Flight identifier without information of airline"
+        },
+        {
+            "name": "flightNumberIATA",
+            "writable": true,
+            "displayName": "flightNumberIATA",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "IATA flight identifier"
+        },
+        {
+            "name": "flightNumberICAO",
+            "writable": true,
+            "displayName": "flightNumberICAO",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "ICAO flight identifier"
+        },
+        {
+            "name": "hasAircraft",
+            "writable": true,
+            "displayName": "hasAircraft"
+        },
+        {
+            "name": "hasAircraftModel",
+            "writable": true,
+            "displayName": "hasAircraftModel"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "passengerCount",
+            "writable": true,
+            "displayName": "passengerCount",
+            "@type": "Property",
+            "schema": "integer",
+            "comment": "Number of flight passengers"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "flightType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "S",
+                        "displayName": "S",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "N",
+                        "displayName": "N",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "G",
+                        "displayName": "G",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "M",
+                        "displayName": "M",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "X",
+                        "displayName": "X",
+                        "enumValue": 5
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "state",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "scheduled",
+                        "displayName": "scheduled",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "active",
+                        "displayName": "active",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "unknown",
+                        "displayName": "unknown",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "redirected",
+                        "displayName": "redirected",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "landed",
+                        "displayName": "landed",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "diverted",
+                        "displayName": "diverted",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "cancelled",
+                        "displayName": "cancelled",
+                        "enumValue": 7
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/AircraftModel/schema.json",
     "title": "Smart Data models - Aircraft schema",
-    "description": "A description of a generic aircraft model"
+    "description": "A description of a generic aircraft model",
+    "type": "object"
 }

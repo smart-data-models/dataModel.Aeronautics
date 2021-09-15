@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/Airline/schema.json",
     "title": "Smart Data models - Airline schema",
-    "description": "A description of a generic airline"
+    "description": "A description of a generic airline",
+    "type": "object"
 }

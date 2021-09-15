@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/AircraftModel/schema.json",
-    "title": "Smart Data models - Aircraft schema"
+    "title": "Smart Data models - Aircraft schema",
+    "description": "A description of a generic aircraft model"
 }

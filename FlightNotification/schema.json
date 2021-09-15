@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/FlightNotification/schema.json",
     "title": "Smart Data models - FlightNotification schema",
-    "description": "A description of a generic flight notification"
+    "description": "A description of a generic flight notification",
+    "type": "object"
 }

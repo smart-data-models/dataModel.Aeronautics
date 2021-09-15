@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/Airport/schema.json",
     "title": "Smart Data models - Airport schema",
-    "description": "A description of a generic airport"
+    "description": "A description of a generic airport",
+    "type": "object"
 }

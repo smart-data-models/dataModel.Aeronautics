@@ -54,5 +54,12 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "belongsToFlight",
+        "dateIssued",
+        "description"
     ]
 }

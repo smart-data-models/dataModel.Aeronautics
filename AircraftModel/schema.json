@@ -79,5 +79,10 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "name"
     ]
 }

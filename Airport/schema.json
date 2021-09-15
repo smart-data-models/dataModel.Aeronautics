@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.1",
     "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/Airport/schema.json"
+    "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/Airport/schema.json",
+    "title": "Smart Data models - Airport schema"
 }

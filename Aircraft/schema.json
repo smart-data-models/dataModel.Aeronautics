@@ -65,5 +65,10 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "registration"
     ]
 }

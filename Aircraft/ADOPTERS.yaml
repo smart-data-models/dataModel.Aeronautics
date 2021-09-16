@@ -2,9 +2,9 @@ description: This is a compilation list of the current adopters of the data mode
 currentAdopters:
 -
  adopter: Aberdeen Airport
- description: Flight turnaround events management.
+ description: Flight turnaround events management
  mail: 
  organization: Aero Global Services 
  project: A/RPORTWIN. AR/VR for digital twins in airports and other infrastructures using FIWARE platform
  comments: 
- startDate: January 2020 
+ startDate: January 2021 

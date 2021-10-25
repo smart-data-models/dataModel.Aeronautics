@@ -6,7 +6,7 @@ Version: 0.0.1
 A description of a generic flight notification
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/FlightNotification/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/FlightNotification/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/FlightNotification/doc/spec.md)
 

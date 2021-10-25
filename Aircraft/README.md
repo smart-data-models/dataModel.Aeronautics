@@ -6,7 +6,7 @@ Version: 0.0.1
 Represent a generic aircraft
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/Aircraft/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/Aircraft/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/Aircraft/doc/spec.md)
 

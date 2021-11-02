@@ -38,17 +38,21 @@ Flight:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     arrivesToAirport:    
       anyOf:    
         - maxLength: 256    
@@ -58,7 +62,8 @@ Flight:
         - format: uri    
           type: string    
       description: 'Reference to the arrival airport entity'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     belongsToAirline:    
       anyOf:    
         - maxLength: 256    
@@ -68,198 +73,235 @@ Flight:
         - format: uri    
           type: string    
       description: 'Reference to the airline entity'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateAIBT:    
       description: 'Actual In-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateALDT:    
       description: 'Actual Landing Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateAOBT:    
       description: 'Actual Off-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateATO:    
       description: 'Actual Time Over'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateATOT:    
       description: 'Actual Take-Off Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateAXIT:    
       description: 'Actual Taxi-In Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateAXOT:    
       description: 'Actual Taxi-Out Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateArrival:    
       description: 'Arrival date of the flight'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateCIBT:    
       description: 'Calculated In-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateCLDT:    
       description: 'Calculated Landing Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateCOBT:    
       description: 'Calculated Off-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateCTO:    
       description: 'Calculated Time Over'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateCTOT:    
       description: 'Calculated Take-Off Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateDeparture:    
       description: 'Departure date of the flight'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateEIBT:    
       description: 'Estimated In-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateELDT:    
       description: 'Estimated Landing Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateEOBT:    
       description: 'Estimated Off-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateETO:    
       description: 'Estimated Time Over'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateETOT:    
       description: 'Estimated Take-Off Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateEXIT:    
       description: 'Estimated Taxi-In Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateEXOT:    
       description: 'Estimated Taxi-Out Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateSIBT:    
       description: 'Scheduled In-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateSLDT:    
       description: 'Scheduled Landing Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateSOBT:    
       description: 'Scheduled Off-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateSTOT:    
       description: 'Scheduled Take-Off Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateTIBT:    
       description: 'Target In-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateTLDT:    
       description: 'Target Landing Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateTOBT:    
       description: 'Target Off-Block Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateTSAT:    
       description: 'Target Start Up Approval Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateTTOT:    
       description: 'Target Take-Off Time'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     departsFromAirport:    
       anyOf:    
         - maxLength: 256    
@@ -269,28 +311,34 @@ Flight:
         - format: uri    
           type: string    
       description: 'Reference to the departure airport entity'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     flightNumber:    
       description: 'Flight identifier without information of airline'    
       pattern: ^[A-Z0-9]{1,}$    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     flightNumberIATA:    
       description: 'IATA flight identifier'    
       pattern: ^[A-Z0-9]{3,}$    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     flightNumberICAO:    
       description: 'ICAO flight identifier'    
       pattern: ^[A-Z]{3}[A-Z0-9]{1,}$    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     flightType:    
       description: 'Flight type described as ICAO doc 4444 Appendix 2. Enum:''S, N, G, M, X'''    
       enum:    
@@ -299,9 +347,10 @@ Flight:
         - G    
         - M    
         - X    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     hasAircraft:    
       anyOf:    
         - maxLength: 256    
@@ -311,7 +360,8 @@ Flight:
         - format: uri    
           type: string    
       description: 'Reference to the aircraft entity'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     hasAircraftModel:    
       anyOf:    
         - maxLength: 256    
@@ -321,7 +371,8 @@ Flight:
         - format: uri    
           type: string    
       description: 'Reference to the aircraft model entity'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     id:    
       anyOf: &flight_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -333,7 +384,8 @@ Flight:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -485,22 +537,28 @@ Flight:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *flight_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     passengerCount:    
       description: 'Number of flight passengers'    
       minimum: 0    
-      type: Property    
+      type: integer    
       x-ngsi:    
         model: http://schema.org/Integer    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -511,10 +569,13 @@ Flight:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     state:    
       description: 'Current state of the flight. Enum:''scheduled, active, unknown, redirected, landed, diverted, cancelled'''    
       enum:    
@@ -525,14 +586,17 @@ Flight:
         - landed    
         - diverted    
         - cancelled    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be Flight'    
       enum:    
         - Flight    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    

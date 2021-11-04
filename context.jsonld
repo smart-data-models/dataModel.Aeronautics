@@ -64,6 +64,7 @@
         "maximumAllowedSpeed": "https://smartdatamodels.org/dataModel.Aeronautics/maximumAllowedSpeed",
         "mtow": "https://smartdatamodels.org/dataModel.Aeronautics/mtow",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "numberOfEngines": "https://smartdatamodels.org/dataModel.Aeronautics/numberOfEngines",
         "owner": "https://smartdatamodels.org/owner",
         "passengerCount": "https://smartdatamodels.org/dataModel.Aeronautics/passengerCount",

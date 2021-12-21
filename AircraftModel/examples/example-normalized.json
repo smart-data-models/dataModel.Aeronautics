@@ -2,39 +2,51 @@
     "id": "aircraftModel-AirbusA310-200",
     "type": "AircraftModel",
     "codeIATA": {
+        "type": "Number",
         "value": "312"
     },
     "codeICAO": {
+        "type": "Text",
         "value": "A310"
     },
     "name": {
+        "type": "Text",
         "value": "Airbus A310-200"
     },
     "length": {
+        "type": "Number",
         "value": 46.66
     },
     "wingSpan": {
+        "type": "Number",
         "value": 43.9
     },
     "height": {
+        "type": "Number",
         "value": 15.8
     },
     "mtow": {
+        "type": "Number",
         "value": 144000
     },
     "maximumAllowedSpeed": {
+        "type": "Number",
         "value": 850
     },
     "maximumAllowedFuel": {
+        "type": "Number",
         "value": 47940
     },
     "ceiling": {
+        "type": "Number",
         "value": 12527
     },
     "numberOfEngines": {
+        "type": "Number",
         "value": 12527
     },
     "capacity": {
+        "type": "Number",
         "value": 12527
     }
 }

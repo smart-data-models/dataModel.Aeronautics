@@ -1,2 +1,0 @@
-"id_", "type_", "codeIATA_", "codeICAO_", "name_", "alternateName_", "address__addressCountry_", "address__addressLocality_", "location__type_", "location__coordinates__0_", "location__coordinates__1_", "location__coordinates__2_", "@context__0_", "@context__1_"
-"urn:ngsi-ld:Airline:airport-BMA", "Airport", "BMA", "ESSB", "Bromma Stockholm Airport", "Stockholm Airport", "SE", "Stockholm", "Point", "59.354444", "17.939722", "14", "https://smartdatamodels.org/context.jsonld", "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"

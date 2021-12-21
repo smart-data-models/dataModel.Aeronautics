@@ -1,2 +1,0 @@
-"id_", "type_", "description_", "state_", "dateIssued_", "belongsToFlight_", "dataProvider_", "@context__0_", "@context__1_"
-"urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z", "FlightNotification", "Delay of five minutes", "active", "2020-12-09T19:01:35.865Z", "urn:ngsi-ld:Flight:flight-3732", "Employee 001", "https://smartdatamodels.org/context.jsonld", "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"

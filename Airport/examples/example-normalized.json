@@ -2,15 +2,19 @@
     "id": "airport-BMA",
     "type": "Airport",
     "codeIATA": {
+        "type": "Text",
         "value": "BMA"
     },
     "codeICAO": {
+        "type": "Text",
         "value": "ESSB"
     },
     "name": {
+        "type": "Text",
         "value": "Bromma Stockholm Airport"
     },
     "alternateName": {
+        "type": "Text",
         "value": "Stockholm Airport"
     },
     "address": {

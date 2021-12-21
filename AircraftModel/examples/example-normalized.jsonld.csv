@@ -1,2 +1,0 @@
-"id_", "type_", "codeIATA_", "codeICAO_", "name_", "length_", "wingSpan_", "height_", "mtow_", "maximumAllowedSpeed_", "maximumAllowedFuel_", "ceiling_", "numberOfEngines_", "capacity_", "@context__0_", "@context__1_"
-"urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200", "AircraftModel", "312", "A310", "Airbus A310-200", "46.66", "43.9", "15.8", "144000", "850", "47940", "12527", "4", "150", "https://smartdatamodels.org/context.jsonld", "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"

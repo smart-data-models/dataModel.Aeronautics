@@ -2,18 +2,23 @@
     "id": "airline-SN",
     "type": "Airline",
     "codeIATA": {
+        "type": "Text",
         "value": "SN"
     },
     "codeICAO": {
+        "type": "Text",
         "value": "BEL"
     },
     "callSign": {
+        "type": "Text",
         "value": "BEELINE"
     },
     "name": {
+        "type": "Text",
         "value": "Brussels Airlines"
     },
     "alternateName": {
+        "type": "Text",
         "value": "Bru Air"
     },
     "address": {

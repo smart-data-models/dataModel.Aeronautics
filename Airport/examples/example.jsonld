@@ -2,42 +2,22 @@
     "id": "urn:ngsi-ld:Airline:airport-BMA",
     "type": "Airport",
     "address": {
-        "type": "Property",
-        "value": {
-            "addressCountry": "SE",
-            "addressLocality": "Stockholm",
-            "type": "PostalAddress"
-        }
+        "addressCountry": "SE",
+        "addressLocality": "Stockholm"
     },
-    "alternateName": {
-        "type": "Property",
-        "value": "Stockholm Airport"
-    },
-    "codeIATA": {
-        "type": "Property",
-        "value": "BMA"
-    },
-    "codeICAO": {
-        "type": "Property",
-        "value": "ESSB"
-    },
+    "alternateName": "Stockholm Airport",
+    "codeIATA": "BMA",
+    "codeICAO": "ESSB",
     "location": {
-        "type": "GeoProperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                59.354444,
-                17.939722,
-                14
-            ]
-        }
+        "type": "Point",
+        "coordinates": [
+            59.354444,
+            17.939722,
+            14
+        ]
     },
-    "name": {
-        "type": "Property",
-        "value": "Bromma Stockholm Airport"
-    },
+    "name": "Bromma Stockholm Airport",
     "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
 }

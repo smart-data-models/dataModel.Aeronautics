@@ -1,2 +1,0 @@
-"id_", "type_", "codeIATA__value_", "codeICAO__value_", "name__value_", "alternateName__value_", "address__type_", "address__value__addressCountry_", "address__value__addressLocality_", "location__type_", "location__value__type_", "location__value__coordinates__0_", "location__value__coordinates__1_", "location__value__coordinates__2_"
-"airport-BMA", "Airport", "BMA", "ESSB", "Bromma Stockholm Airport", "Stockholm Airport", "PostalAddress", "SE", "Stockholm", "geo:json", "Point", "59.354444", "17.939722", "14"

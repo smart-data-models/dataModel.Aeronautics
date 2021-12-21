@@ -1,56 +1,19 @@
 {
     "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
     "type": "AircraftModel",
-    "capacity": {
-        "type": "Property",
-        "value": 150
-    },
-    "ceiling": {
-        "type": "Property",
-        "value": 12527
-    },
-    "codeIATA": {
-        "type": "Property",
-        "value": "312"
-    },
-    "codeICAO": {
-        "type": "Property",
-        "value": "A310"
-    },
-    "height": {
-        "type": "Property",
-        "value": 15.8
-    },
-    "length": {
-        "type": "Property",
-        "value": 46.66
-    },
-    "maximumAllowedFuel": {
-        "type": "Property",
-        "value": 47940
-    },
-    "maximumAllowedSpeed": {
-        "type": "Property",
-        "value": 850
-    },
-    "mtow": {
-        "type": "Property",
-        "value": 144000
-    },
-    "name": {
-        "type": "Property",
-        "value": "Airbus A310-200"
-    },
-    "numberOfEngines": {
-        "type": "Property",
-        "value": 4
-    },
-    "wingSpan": {
-        "type": "Property",
-        "value": 43.9
-    },
+    "capacity": 150,
+    "ceiling": 12527,
+    "codeIATA": "312",
+    "codeICAO": "A310",
+    "height": 15.8,
+    "length": 46.66,
+    "maximumAllowedFuel": 47940,
+    "maximumAllowedSpeed": 850,
+    "mtow": 144000,
+    "name": "Airbus A310-200",
+    "numberOfEngines": 4,
+    "wingSpan": 43.9,
     "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
 }

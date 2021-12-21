@@ -2,34 +2,14 @@
     "id": "urn:ngsi-ld:Airline:airline-SN",
     "type": "Airline",
     "address": {
-        "type": "Property",
-        "value": {
-            "addressCountry": "BE",
-            "type": "PostalAddress"
-        }
+        "addressCountry": "BE"
     },
-    "alternateName": {
-        "type": "Property",
-        "value": "Bru Air"
-    },
-    "callSign": {
-        "type": "Property",
-        "value": "BEELINE"
-    },
-    "codeIATA": {
-        "type": "Property",
-        "value": "SN"
-    },
-    "codeICAO": {
-        "type": "Property",
-        "value": "BEL"
-    },
-    "name": {
-        "type": "Property",
-        "value": "Brussels Airlines"
-    },
+    "alternateName": "Bru Air",
+    "callSign": "BEELINE",
+    "codeIATA": "SN",
+    "codeICAO": "BEL",
+    "name": "Brussels Airlines",
     "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
 }

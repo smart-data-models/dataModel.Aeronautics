@@ -2,6 +2,7 @@
     "id": "aircraft-ABCDE",
     "type": "Aircraft",
     "registration": {
+        "type": "Text",
         "value": "A-BCDE"
     },
     "location": {
@@ -12,15 +13,19 @@
         }
     },
     "speed": {
+        "type": "Number",
         "value": 810
     },
     "verticalSpeed": {
+        "type": "Number",
         "value": 2
     },
     "isOnGround": {
+        "type": "Boolean",
         "value": false
     },
     "heading": {
+        "type": "Number",
         "value": 45
     },
     "dateIssued": {

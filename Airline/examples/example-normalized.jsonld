@@ -1,16 +1,15 @@
 {
-  "id": "urn:ngsi-ld:Airline:airline-SN",
-  "type": "Airline",
-  "codeIATA": "SN",
-  "codeICAO": "BEL",
-  "callSign": "BEELINE",
-  "name": "Brussels Airlines",
-  "alternateName": "Bru Air",
-  "address": {
-    "addressCountry": "BE"
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:Airline:airline-SN",
+    "type": "Airline",
+    "address": {
+        "addressCountry": "BE"
+    },
+    "alternateName": "Bru Air",
+    "callSign": "BEELINE",
+    "codeIATA": "SN",
+    "codeICAO": "BEL",
+    "name": "Brussels Airlines",
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
 }

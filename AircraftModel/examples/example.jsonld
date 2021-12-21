@@ -1,56 +1,56 @@
 {
-  "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
-  "type": "AircraftModel",
-  "codeIATA": {
-    "type": "Property",
-    "value": "312"
-  },
-  "codeICAO": {
-    "type": "Property",
-    "value": "A310"
-  },
-  "name": {
-    "type": "Property",
-    "value": "Airbus A310-200"
-  },
-  "length": {
-    "type": "Property",
-    "value": 46.66
-  },
-  "wingSpan": {
-    "type": "Property",
-    "value": 43.9
-  },
-  "height": {
-    "type": "Property",
-    "value": 15.8
-  },
-  "mtow": {
-    "type": "Property",
-    "value": 144000
-  },
-  "maximumAllowedSpeed": {
-    "type": "Property",
-    "value": 850
-  },
-  "maximumAllowedFuel": {
-    "type": "Property",
-    "value": 47940
-  },
-  "ceiling": {
-    "type": "Property",
-    "value": 12527
-  },
-  "numberOfEngines": {
-    "type": "Property",
-    "value": 4
-  },
-  "capacity": {
-    "type": "Property",
-    "value": 150
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
+    "type": "AircraftModel",
+    "capacity": {
+        "type": "Property",
+        "value": 150
+    },
+    "ceiling": {
+        "type": "Property",
+        "value": 12527
+    },
+    "codeIATA": {
+        "type": "Property",
+        "value": "312"
+    },
+    "codeICAO": {
+        "type": "Property",
+        "value": "A310"
+    },
+    "height": {
+        "type": "Property",
+        "value": 15.8
+    },
+    "length": {
+        "type": "Property",
+        "value": 46.66
+    },
+    "maximumAllowedFuel": {
+        "type": "Property",
+        "value": 47940
+    },
+    "maximumAllowedSpeed": {
+        "type": "Property",
+        "value": 850
+    },
+    "mtow": {
+        "type": "Property",
+        "value": 144000
+    },
+    "name": {
+        "type": "Property",
+        "value": "Airbus A310-200"
+    },
+    "numberOfEngines": {
+        "type": "Property",
+        "value": 4
+    },
+    "wingSpan": {
+        "type": "Property",
+        "value": 43.9
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"
+    ]
 }

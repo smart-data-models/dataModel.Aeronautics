@@ -1,0 +1,2 @@
+"id_", "type_", "codeIATA_", "codeICAO_", "name_", "alternateName_", "address__addressCountry_", "address__addressLocality_", "location__type_", "location__coordinates__0_", "location__coordinates__1_", "location__coordinates__2_"
+"airport-BMA", "Airport", "BMA", "ESSB", "Bromma Stockholm Airport", "Stockholm Airport", "SE", "Stockholm", "Point", "59.354444", "17.939722", "14"

@@ -1,20 +1,19 @@
 {
-  "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
-  "type": "AircraftModel",
-  "codeIATA": "312",
-  "codeICAO": "A310",
-  "name": "Airbus A310-200",
-  "length": 46.66,
-  "wingSpan": 43.9,
-  "height": 15.8,
-  "mtow": 144000,
-  "maximumAllowedSpeed": 850,
-  "maximumAllowedFuel": 47940,
-  "ceiling": 12527,
-  "numberOfEngines": 4,
-  "capacity": 150,
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
+    "type": "AircraftModel",
+    "capacity": 150,
+    "ceiling": 12527,
+    "codeIATA": "312",
+    "codeICAO": "A310",
+    "height": 15.8,
+    "length": 46.66,
+    "maximumAllowedFuel": 47940,
+    "maximumAllowedSpeed": 850,
+    "mtow": 144000,
+    "name": "Airbus A310-200",
+    "numberOfEngines": 4,
+    "wingSpan": 43.9,
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    ]
 }

@@ -1,50 +1,50 @@
 {
-  "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",
-  "type": "Aircraft",
-  "registration": {
-    "type": "Property",
-    "value": "A-BCDE"
-  },
-  "location": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        50.503887,
-        4.469936,
-        10000
-      ]
-    }
-  },
-  "speed": {
-    "type": "Property",
-    "value": 810
-  },
-  "verticalSpeed": {
-    "type": "Property",
-    "value": 2
-  },
-  "isOnGround": {
-    "type": "Property",
-    "value": false
-  },
-  "heading": {
-    "type": "Property",
-    "value": 45
-  },
-  "dateIssued": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2020-12-09T19:01:35.865Z"
-    }
-  },
-  "belongsToAircraftModel": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",
+    "type": "Aircraft",
+    "belongsToAircraftModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"
+    },
+    "dateIssued": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-12-09T19:01:35.865Z"
+        }
+    },
+    "heading": {
+        "type": "Property",
+        "value": 45
+    },
+    "isOnGround": {
+        "type": "Property",
+        "value": false
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                50.503887,
+                4.469936,
+                10000
+            ]
+        }
+    },
+    "registration": {
+        "type": "Property",
+        "value": "A-BCDE"
+    },
+    "speed": {
+        "type": "Property",
+        "value": 810
+    },
+    "verticalSpeed": {
+        "type": "Property",
+        "value": 2
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"
+    ]
 }

@@ -1,23 +1,22 @@
 {
-  "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",
-  "type": "Aircraft",
-  "registration": "A-BCDE",
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      50.503887,
-      4.469936,
-      10000
+    "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",
+    "type": "Aircraft",
+    "belongsToAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
+    "dateIssued": "2020-12-09T19:01:35.865Z",
+    "heading": 45,
+    "isOnGround": false,
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            50.503887,
+            4.469936,
+            10000
+        ]
+    },
+    "registration": "A-BCDE",
+    "speed": 810,
+    "verticalSpeed": 2,
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
-  },
-  "speed": 810,
-  "verticalSpeed": 2,
-  "isOnGround": false,
-  "heading": 45,
-  "dateIssued": "2020-12-09T19:01:35.865Z",
-  "belongsToAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
 }

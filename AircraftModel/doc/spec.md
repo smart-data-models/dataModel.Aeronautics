@@ -1,4 +1,5 @@
-Entity: AircraftModel  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: AircraftModel  
 =====================  
 [Open License](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/AircraftModel/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
@@ -367,6 +368,12 @@ AircraftModel:
     - type    
     - name    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/AircraftModel/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/AircraftModel/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## Example payloads    
@@ -397,39 +404,51 @@ AircraftModel:
     "id": "aircraftModel-AirbusA310-200",  
     "type": "AircraftModel",  
     "codeIATA": {  
+        "type": "Number",  
         "value": "312"  
     },  
     "codeICAO": {  
+        "type": "Text",  
         "value": "A310"  
     },  
     "name": {  
+        "type": "Text",  
         "value": "Airbus A310-200"  
     },  
     "length": {  
+        "type": "Number",  
         "value": 46.66  
     },  
     "wingSpan": {  
+        "type": "Number",  
         "value": 43.9  
     },  
     "height": {  
+        "type": "Number",  
         "value": 15.8  
     },  
     "mtow": {  
+        "type": "Number",  
         "value": 144000  
     },  
     "maximumAllowedSpeed": {  
+        "type": "Number",  
         "value": 850  
     },  
     "maximumAllowedFuel": {  
+        "type": "Number",  
         "value": 47940  
     },  
     "ceiling": {  
+        "type": "Number",  
         "value": 12527  
     },  
     "numberOfEngines": {  
+        "type": "Number",  
         "value": 12527  
     },  
     "capacity": {  
+        "type": "Number",  
         "value": 12527  
     }  
 }  
@@ -438,84 +457,83 @@ AircraftModel:
 Here is an example of a AircraftModel in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
-  "type": "AircraftModel",  
-  "codeIATA": {  
-    "type": "Property",  
-    "value": "312"  
-  },  
-  "codeICAO": {  
-    "type": "Property",  
-    "value": "A310"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Airbus A310-200"  
-  },  
-  "length": {  
-    "type": "Property",  
-    "value": 46.66  
-  },  
-  "wingSpan": {  
-    "type": "Property",  
-    "value": 43.9  
-  },  
-  "height": {  
-    "type": "Property",  
-    "value": 15.8  
-  },  
-  "mtow": {  
-    "type": "Property",  
-    "value": 144000  
-  },  
-  "maximumAllowedSpeed": {  
-    "type": "Property",  
-    "value": 850  
-  },  
-  "maximumAllowedFuel": {  
-    "type": "Property",  
-    "value": 47940  
-  },  
-  "ceiling": {  
-    "type": "Property",  
-    "value": 12527  
-  },  
-  "numberOfEngines": {  
-    "type": "Property",  
-    "value": 4  
-  },  
-  "capacity": {  
-    "type": "Property",  
-    "value": 150  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
+    "type": "AircraftModel",  
+    "capacity": 150,  
+    "ceiling": 12527,  
+    "codeIATA": "312",  
+    "codeICAO": "A310",  
+    "height": 15.8,  
+    "length": 46.66,  
+    "maximumAllowedFuel": 47940,  
+    "maximumAllowedSpeed": 850,  
+    "mtow": 144000,  
+    "name": "Airbus A310-200",  
+    "numberOfEngines": 4,  
+    "wingSpan": 43.9,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+    ]  
 }  
 ```  
 #### AircraftModel NGSI-LD normalized Example    
 Here is an example of a AircraftModel in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
-  "type": "AircraftModel",  
-  "codeIATA": "312",  
-  "codeICAO": "A310",  
-  "name": "Airbus A310-200",  
-  "length": 46.66,  
-  "wingSpan": 43.9,  
-  "height": 15.8,  
-  "mtow": 144000,  
-  "maximumAllowedSpeed": 850,  
-  "maximumAllowedFuel": 47940,  
-  "ceiling": 12527,  
-  "numberOfEngines": 4,  
-  "capacity": 150,  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
+    "type": "AircraftModel",  
+    "capacity": {  
+        "type": "Property",  
+        "value": 150  
+    },  
+    "ceiling": {  
+        "type": "Property",  
+        "value": 12527  
+    },  
+    "codeIATA": {  
+        "type": "Property",  
+        "value": "312"  
+    },  
+    "codeICAO": {  
+        "type": "Property",  
+        "value": "A310"  
+    },  
+    "height": {  
+        "type": "Property",  
+        "value": 15.8  
+    },  
+    "length": {  
+        "type": "Property",  
+        "value": 46.66  
+    },  
+    "maximumAllowedFuel": {  
+        "type": "Property",  
+        "value": 47940  
+    },  
+    "maximumAllowedSpeed": {  
+        "type": "Property",  
+        "value": 850  
+    },  
+    "mtow": {  
+        "type": "Property",  
+        "value": 144000  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Airbus A310-200"  
+    },  
+    "numberOfEngines": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "wingSpan": {  
+        "type": "Property",  
+        "value": 43.9  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  

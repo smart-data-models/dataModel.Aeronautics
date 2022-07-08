@@ -1,8 +1,10 @@
-Entity: Aircraft  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Aircraft  
 ================  
 [Open License](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/Aircraft/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **Represent a generic aircraft**  
+version: 0.0.1  
 
 ## List of properties  
 
@@ -334,6 +336,12 @@ Aircraft:
     - type    
     - registration    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/Aircraft/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/Aircraft/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## Example payloads    
@@ -363,6 +371,7 @@ Aircraft:
     "id": "aircraft-ABCDE",  
     "type": "Aircraft",  
     "registration": {  
+        "type": "Text",  
         "value": "A-BCDE"  
     },  
     "location": {  
@@ -373,15 +382,19 @@ Aircraft:
         }  
     },  
     "speed": {  
+        "type": "Number",  
         "value": 810  
     },  
     "verticalSpeed": {  
+        "type": "Number",  
         "value": 2  
     },  
     "isOnGround": {  
+        "type": "Boolean",  
         "value": false  
     },  
     "heading": {  
+        "type": "Number",  
         "value": 45  
     },  
     "dateIssued": {  
@@ -398,81 +411,80 @@ Aircraft:
 Here is an example of a Aircraft in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
-  "type": "Aircraft",  
-  "registration": {  
-    "type": "Property",  
-    "value": "A-BCDE"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        50.503887,  
-        4.469936,  
-        10000  
-      ]  
-    }  
-  },  
-  "speed": {  
-    "type": "Property",  
-    "value": 810  
-  },  
-  "verticalSpeed": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "isOnGround": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "heading": {  
-    "type": "Property",  
-    "value": 45  
-  },  
-  "dateIssued": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-12-09T19:01:35.865Z"  
-    }  
-  },  
-  "belongsToAircraftModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
+    "type": "Aircraft",  
+    "belongsToAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
+    "dateIssued": "2020-12-09T19:01:35.865Z",  
+    "heading": 45,  
+    "isOnGround": false,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            50.503887,  
+            4.469936,  
+            10000  
+        ]  
+    },  
+    "registration": "A-BCDE",  
+    "speed": 810,  
+    "verticalSpeed": 2,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+    ]  
 }  
 ```  
 #### Aircraft NGSI-LD normalized Example    
 Here is an example of a Aircraft in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
-  "type": "Aircraft",  
-  "registration": "A-BCDE",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      50.503887,  
-      4.469936,  
-      10000  
+    "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
+    "type": "Aircraft",  
+    "belongsToAircraftModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"  
+    },  
+    "dateIssued": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-12-09T19:01:35.865Z"  
+        }  
+    },  
+    "heading": {  
+        "type": "Property",  
+        "value": 45  
+    },  
+    "isOnGround": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                50.503887,  
+                4.469936,  
+                10000  
+            ]  
+        }  
+    },  
+    "registration": {  
+        "type": "Property",  
+        "value": "A-BCDE"  
+    },  
+    "speed": {  
+        "type": "Property",  
+        "value": 810  
+    },  
+    "verticalSpeed": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
     ]  
-  },  
-  "speed": 810,  
-  "verticalSpeed": 2,  
-  "isOnGround": false,  
-  "heading": 45,  
-  "dateIssued": "2020-12-09T19:01:35.865Z",  
-  "belongsToAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  

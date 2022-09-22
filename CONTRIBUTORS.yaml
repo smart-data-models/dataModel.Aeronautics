@@ -1,30 +1,30 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
--
- name: Alvaro
- surname: Alonso
- mail: alvaro.alonso@upm.es
- organization: Departamento de Ingenieria de Sistemas Telematicos, Escuela Tecnica Superior de Ingenieros de Telecomunicacion, Universidad Politecnica de Madrid
- project:
- comments:
--
- name: Javier
- surname: Conde
- mail: javier.conde.diaz@alumnos.upm.es
- organization: Departamento de Ingenieria de Sistemas Telematicos, Escuela Tecnica Superior de Ingenieros de Telecomunicacion, Universidad Politecnica de Madrid
- project:
- comments:
--
- name: Andres
- surname: Munoz-Arcentales
- mail:
- organization: Departamento de Ingenieria de Sistemas Telematicos, Escuela Tecnica Superior de Ingenieros de Telecomunicacion, Universidad Politecnica de Madrid
- project:
- comments:
--
- name: Javier
- surname: Rojo Muñoz
- mail:
- organization: Fundacion Centro de Innovacion de Infraestructuras Inteligentes
- project: A/RPORTWIN. AR/VR for digital twins in airports and other infrastructures using FIWARE platform
- comments:
+- name: Alvaro
+  surname: Alonso
+  mail: alvaro.alonso@upm.es
+  organization: Departamento de Ingenieria de Sistemas Telematicos, Escuela Tecnica Superior de Ingenieros de Telecomunicacion, Universidad Politecnica de Madrid
+  project: 
+  comments: 
+  year: 2022
+- name: Javier
+  surname: Conde
+  mail: javier.conde.diaz@alumnos.upm.es
+  organization: Departamento de Ingenieria de Sistemas Telematicos, Escuela Tecnica Superior de Ingenieros de Telecomunicacion, Universidad Politecnica de Madrid
+  project: 
+  comments: 
+  year: 2022
+- name: Andres
+  surname: Munoz-Arcentales
+  mail: 
+  organization: Departamento de Ingenieria de Sistemas Telematicos, Escuela Tecnica Superior de Ingenieros de Telecomunicacion, Universidad Politecnica de Madrid
+  project: 
+  comments: 
+  year: 2022
+- name: Javier
+  surname: "Rojo Mu\xF1oz"
+  mail: 
+  organization: Fundacion Centro de Innovacion de Infraestructuras Inteligentes
+  project: A/RPORTWIN. AR/VR for digital twins in airports and other infrastructures using FIWARE platform
+  comments: 
+  year: 2022

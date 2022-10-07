@@ -7,6 +7,7 @@
     "description": "Delay of five minutes",
     "state": "active",
     "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"
     ]
 }

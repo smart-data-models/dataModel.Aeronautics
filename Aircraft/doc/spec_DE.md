@@ -1,17 +1,32 @@
-Entität: Aircraft  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: Luftfahrzeug  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/Aircraft/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Repräsentiert ein generisches Flugzeug**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Stellt ein allgemeines Flugzeug dar**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `belongsToAircraftModel`: Referenz auf die Flugzeugmodell-Entität  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateIssued`: Datum, an dem die Messung durchgeführt wurde  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `heading`: Aktueller Flugzeugkurs in Grad. Untis: 'Grad'  - `id`: Eindeutiger Bezeichner der Entität  - `isOnGround`: Logischer Indikator, der bestimmt, ob ein Flugzeug am Boden ist  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `registration`: Hecknummer oder Flugzeugregistrierung  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `speed`: Aktuelle Flugzeuggeschwindigkeit in Kilometern pro Stunde  - `type`: NGSI Entity-Typ. Es muss Aircraft sein  - `verticalSpeed`: Aktuelle vertikale Fluggeschwindigkeit in Metern pro Sekunde    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `belongsToAircraftModel[*]`: Verweis auf die Entität des Luftfahrzeugmodells  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateIssued[string]`: Datum, an dem die Messung durchgeführt wurde  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `heading[number]`: Aktueller Kurs des Flugzeugs in Grad. Untis: 'Grad'  . Model: [http://schema.org/Number](http://schema.org/Number)- `id[*]`: Eindeutiger Bezeichner der Entität  - `isOnGround[boolean]`: Logischer Indikator, der bestimmt, ob ein Flugzeug am Boden ist  . Model: [http://schema.org/Boolean](http://schema.org/Boolean)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `registration[string]`: Hecknummer oder Luftfahrzeugregistrierung  . Model: [http://schema.org/Text](http://schema.org/Text)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `speed[number]`: Aktuelle Fluggeschwindigkeit in Kilometern pro Stunde  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: NGSI-Entitätstyp. Es muss Aircraft sein  - `verticalSpeed[number]`: Aktuelle vertikale Fluggeschwindigkeit in Metern pro Sekunde  . Model: [http://schema.org/Number](http://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `registration`  - `type`    
-Die Entität "Aircraft" enthält eine Beschreibung eines generischen Flugzeugs mit den von der Luftfahrtindustrie verwendeten Standardparametern.  
+- `id`  - `registration`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Die Entität "Flugzeug" enthält eine Beschreibung eines generischen Flugzeugs mit den von der Luftfahrtindustrie verwendeten Standardparametern.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Aircraft:    
@@ -38,17 +53,21 @@ Aircraft:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     belongsToAircraftModel:    
       anyOf:    
         - maxLength: 256    
@@ -58,32 +77,43 @@ Aircraft:
         - format: uri    
           type: string    
       description: 'Reference to the aircraft model entity'    
-      type: Relationship    
+      x-ngsi:    
+        type: Relationship    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateIssued:    
       description: 'Date when the meassure was taken'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     heading:    
       description: 'Current aircraft heading in degrees. Untis: ''degrees'''    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     id:    
       anyOf: &aircraft_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -95,12 +125,14 @@ Aircraft:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     isOnGround:    
       description: 'Logical indicator that determines if an aircraft is on ground'    
-      type: Property    
+      type: boolean    
       x-ngsi:    
         model: http://schema.org/Boolean    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -252,22 +284,28 @@ Aircraft:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *aircraft_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     registration:    
       description: 'Tail number or aircraft registration'    
       pattern: ^[A-Z]-[A-Z]{4}|[A-Z]{2}-[A-Z]{3}|[A-Z]{5}|N[0-9]{1,5}[A-Z]{0,2}$    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -278,37 +316,55 @@ Aircraft:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     speed:    
       description: 'Current aircraft speed in kilometres per hour'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'kilometres per hour'    
     type:    
       description: 'NGSI Entity type. It has to be Aircraft'    
       enum:    
         - Aircraft    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     verticalSpeed:    
       description: 'Current vertical aircraft speed in metres per second'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'metres per second'    
   required:    
     - id    
     - type    
     - registration    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/Aircraft/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/Aircraft/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Flugzeuge NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für ein Aircraft im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen Aircraft im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "aircraft-ABCDE",  
@@ -326,13 +382,16 @@ Aircraft:
     "belongsToAircraftModel": "aircraftModel-AirbusA310-200"  
 }  
 ```  
-#### Flugzeuge NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein Aircraft im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+</details>  
+#### Luftfahrzeug NGSI-v2 normalisiert Beispiel  
+Hier ein Beispiel für ein Aircraft im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "aircraft-ABCDE",  
     "type": "Aircraft",  
     "registration": {  
+        "type": "Text",  
         "value": "A-BCDE"  
     },  
     "location": {  
@@ -343,15 +402,19 @@ Aircraft:
         }  
     },  
     "speed": {  
+        "type": "Number",  
         "value": 810  
     },  
     "verticalSpeed": {  
+        "type": "Number",  
         "value": 2  
     },  
     "isOnGround": {  
+        "type": "Boolean",  
         "value": false  
     },  
     "heading": {  
+        "type": "Number",  
         "value": 45  
     },  
     "dateIssued": {  
@@ -364,85 +427,97 @@ Aircraft:
     }  
 }  
 ```  
-#### Flugzeuge NGSI-LD-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für ein Aircraft im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+</details>  
+#### Flugzeuge NGSI-LD Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für ein Flugzeug im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
-  "type": "Aircraft",  
-  "registration": {  
-    "type": "Property",  
-    "value": "A-BCDE"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        50.503887,  
-        4.469936,  
-        10000  
-      ]  
-    }  
-  },  
-  "speed": {  
-    "type": "Property",  
-    "value": 810  
-  },  
-  "verticalSpeed": {  
-    "type": "Property",  
-    "value": 2  
-  },  
-  "isOnGround": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "heading": {  
-    "type": "Property",  
-    "value": 45  
-  },  
-  "dateIssued": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-12-09T19:01:35.865Z"  
-    }  
-  },  
-  "belongsToAircraftModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### Flugzeuge NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein Aircraft im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
-```json  
-{  
-  "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
-  "type": "Aircraft",  
-  "registration": "A-BCDE",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      50.503887,  
-      4.469936,  
-      10000  
+    "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
+    "type": "Aircraft",  
+    "belongsToAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
+    "dateIssued": "2020-12-09T19:01:35.865Z",  
+    "heading": 45,  
+    "isOnGround": false,  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            50.503887,  
+            4.469936,  
+            10000  
+        ]  
+    },  
+    "registration": "A-BCDE",  
+    "speed": 810,  
+    "verticalSpeed": 2,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
     ]  
-  },  
-  "speed": 810,  
-  "verticalSpeed": 2,  
-  "isOnGround": false,  
-  "heading": 45,  
-  "dateIssued": "2020-12-09T19:01:35.865Z",  
-  "belongsToAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details>  
+#### Luftfahrzeug NGSI-LD normalisiert Beispiel  
+Hier ein Beispiel für ein Aircraft im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
+    "type": "Aircraft",  
+    "belongsToAircraftModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"  
+    },  
+    "dateIssued": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-12-09T19:01:35.865Z"  
+        }  
+    },  
+    "heading": {  
+        "type": "Property",  
+        "value": 45  
+    },  
+    "isOnGround": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                50.503887,  
+                4.469936,  
+                10000  
+            ]  
+        }  
+    },  
+    "registration": {  
+        "type": "Property",  
+        "value": "A-BCDE"  
+    },  
+    "speed": {  
+        "type": "Property",  
+        "value": 810  
+    },  
+    "verticalSpeed": {  
+        "type": "Property",  
+        "value": 2  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

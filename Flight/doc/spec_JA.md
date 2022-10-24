@@ -1,17 +1,32 @@
-エンティティフライト  
-==========  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティフライト  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/Flight/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**一般的なフライトの説明です。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**一般的なフライトの説明**  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `arrivesToAirport`: 到着空港エンティティへの参照  - `belongsToAirline`: 航空会社のエンティティへの参照  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateAIBT`: 実際のインブロッキングタイム  - `dateALDT`: 実際の着地時間  - `dateAOBT`: 実際のオフ・ブロック・タイム  - `dateATO`: 実際のタイムオーバー  - `dateATOT`: 実際の離陸時間  - `dateAXIT`: 実際のタクシー乗り入れ時間  - `dateAXOT`: 実際のタクシー出動時間  - `dateArrival`: フライトの到着日  - `dateCIBT`: 計算されたインブロッキングタイム  - `dateCLDT`: 計算上の着地時間  - `dateCOBT`: 計算されたオフ・ブロック・タイム  - `dateCTO`: 計算されたタイムオーバー  - `dateCTOT`: 計算上の離陸時間  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateDeparture`: フライトの出発日  - `dateEIBT`: 想定されるインブロッキング時間  - `dateELDT`: 着陸時間の目安  - `dateEOBT`: 想定されるオフブロック時間  - `dateETO`: 予想される時間オーバー  - `dateETOT`: 推定離陸時間  - `dateEXIT`: 想定されるタクシー乗り入れ時間  - `dateEXOT`: タクシー退出時間の目安  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateSIBT`: インブロッキングの予定時間  - `dateSLDT`: 着陸予定時刻  - `dateSOBT`: オフボックステスト  - `dateSTOT`: 離陸予定時刻  - `dateTIBT`: ターゲットインブロックタイム  - `dateTLDT`: 目標着地時間  - `dateTOBT`: 目標とするオフ・ブロック・タイム  - `dateTSAT`: 目標スタートアップ承認時間  - `dateTTOT`: 目標離陸時間  - `departsFromAirport`: 出発空港のエンティティへの参照  - `description`: このアイテムの説明  - `flightNumber`: 航空会社の情報を含まないフライト識別子  - `flightNumberIATA`: IATA便名  - `flightNumberICAO`: ICAO便名  - `flightType`: ICAO doc 4444 Appendix 2に記載されているフライトタイプです。イナム：「S、N、G、M、X」。  - `hasAircraft`: 航空機本体への参照  - `hasAircraftModel`: 航空機モデルエンティティへの参照  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `passengerCount`: 搭乗者数  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `state`: フライトの現在の状態。Enum:'scheduled, active, unknown, redirected, landed, diverted, canceled'.  - `type`: NGSI エンティティタイプ。フライトでなければならない    
-必須項目  
-- `id`  - `type`    
-フライトエンティティには、航空業界で使用されている標準的なパラメータを持つ一般的なフライトの記述が含まれています。このモデルは、[EUROCONTROL](https://www.eurocontrol.int/)、[ICAO](https://www.icao.int/)、[IATA](https://www.iata.org/)など、航空業界の主要組織が発表した仕様に基づいています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivesToAirport[*]`: 到着空港のエンティティへの参照  - `belongsToAirline[*]`: 航空会社のエンティティへの参照  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateAIBT[string]`: 実際のインブロック時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateALDT[string]`: 実際の着陸時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAOBT[string]`: 実際のオフ・ブロック時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateATO[string]`: 実際のタイムオーバー  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateATOT[string]`: 実際の離陸時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAXIT[string]`: 実際のタクシーインタイム  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAXOT[string]`: 実際のタクシー出動時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateArrival[string]`: フライトの到着日  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCIBT[string]`: 計算されたインブロック時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCLDT[string]`: 計算された着陸時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCOBT[string]`: 計算されたオフ・ブロック時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCTO[string]`: 計算されたタイムオーバー  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCTOT[string]`: 離陸時間の計算  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateDeparture[string]`: フライトの出発日  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEIBT[string]`: 推定インブロック時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateELDT[string]`: 着陸予定時刻  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEOBT[string]`: オフ・ブロックの推定時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateETO[string]`: 予想される時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateETOT[string]`: 離陸予定時刻  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEXIT[string]`: タクシー到着予定時刻  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEXOT[string]`: タクシー出庫予定時刻  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateSIBT[string]`: インブロック予定時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSLDT[string]`: 着陸予定時刻  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSOBT[string]`: オフ・ブロックの予定時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSTOT[string]`: 離陸予定時刻  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTIBT[string]`: ターゲットインブロック時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTLDT[string]`: 目標着陸時刻  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTOBT[string]`: 目標オフ・ブロック時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTSAT[string]`: 目標起動承認時間  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTTOT[string]`: 目標離陸時刻  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `departsFromAirport[*]`: 出発空港の実体への言及  - `description[string]`: このアイテムの説明  - `flightNumber[string]`: 航空会社の情報がないフライトの識別情報  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightNumberIATA[string]`: IATAフライト識別子  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightNumberICAO[string]`: ICAOフライト識別子  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightType[string]`: ICAO doc 4444 Appendix 2 として記述されたフライトタイプ。Enum:'S, N, G, M, X'の略。  . Model: [http://schema.org/Text](http://schema.org/Text)- `hasAircraft[*]`: 航空機の実体への参照  - `hasAircraftModel[*]`: 航空機モデルの実体への参照  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `passengerCount[integer]`: 搭乗者数  . Model: [http://schema.org/Integer](http://schema.org/Integer)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `state[string]`: 現在のフライトの状態。Enum:'scheduled, active, unknown, redirected, landed, diverted, cancelled'（予定通り、アクティブ、不明、着陸、迂回、キャンセル  . Model: [http://schema.org/Text](http://schema.org/Text)- `type[string]`: NGSI Entity タイプ。これはフライトでなければなりません。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+フライトエンティティには、航空業界で使用される標準的なパラメータを持つ一般的なフライトの記述が含まれます。このモデルは、[EUROCONTROL](https://www.eurocontrol.int/), [ICAO](https://www.icao.int/) および [IATA](https://www.iata.org/) などの航空業界の主要機関が発行する仕様に基づいています。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Flight:    
@@ -609,9 +624,14 @@ Flight:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### フライトNGSI-v2のキーバリューの例  
-JSON-LD形式でkey-valuesとしてFlightを表示した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### フライトNGSI-v2キーバリューの例  
+ここでは、FlightをJSON-LD形式でkey-valuesとした場合の例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "flight-3732",  
@@ -635,28 +655,36 @@ Flight:
     "belongsToAirline": "airline-SN"  
 }  
 ```  
+</details>  
 #### フライト NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のFlightの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のFlightの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "flight-3732",  
     "type": "Flight",  
     "flightNumber": {  
+        "type": "Text",  
         "value": "3732"  
     },  
     "flightNumberIATA": {  
+        "type": "Text",  
         "value": "SN3732"  
     },  
     "flightNumberICAO": {  
+        "type": "Text",  
         "value": "BEL3732"  
     },  
     "flightType": {  
+        "type": "Text",  
         "value": "G"  
     },  
     "state": {  
+        "type": "Text",  
         "value": "active"  
     },  
     "passengerCount": {  
+        "type": "Number",  
         "value": 25  
     },  
     "dateDeparture": {  
@@ -705,131 +733,143 @@ Flight:
     }  
 }  
 ```  
-#### フライトNGSI-LDのキーバリューの例  
-Key-ValuesとしてJSON-LD形式のFlightの例を示します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### フライトNGSI-LDのキー値例  
+ここでは、FlightをJSON-LD形式でkey-valuesとした場合の例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Flight:flight-3732",  
-  "type": "Flight",  
-  "flightNumber": {  
-    "type": "Property",  
-    "value": "3732"  
-  },  
-  "flightNumberIATA": {  
-    "type": "Property",  
-    "value": "SN3732"  
-  },  
-  "flightNumberICAO": {  
-    "type": "Property",  
-    "value": "BEL3732"  
-  },  
-  "flightType": {  
-    "type": "Property",  
-    "value": "G"  
-  },  
-  "state": {  
-    "type": "Property",  
-    "value": "active"  
-  },  
-  "passengerCount": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "dateDeparture": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T10:40:01.00Z"  
-    }  
-  },  
-  "dateArrival": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T12:40:01.00Z"  
-    }  
-  },  
-  "dateSOBT": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T10:40:01.00Z"  
-    }  
-  },  
-  "dateSTOT": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T10:45:01.00Z"  
-    }  
-  },  
-  "dateSLDT": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T12:35:01.00Z"  
-    }  
-  },  
-  "dateSIBT": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T12:40:01.00Z"  
-    }  
-  },  
-  "hasAircraft": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Aircraft:aircraft-ABCDE"  
-  },  
-  "hasAircraftModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"  
-  },  
-  "departsFromAirport": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Airline:airport-BMA"  
-  },  
-  "arrivesToAirport": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Airline:airport-MAD"  
-  },  
-  "belongsToAirline": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Airline:airline-SN"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Flight:flight-3732",  
+    "type": "Flight",  
+    "arrivesToAirport": "urn:ngsi-ld:Airline:airport-MAD",  
+    "belongsToAirline": "urn:ngsi-ld:Airline:airline-SN",  
+    "dateArrival": "2018-12-01T12:40:01.00Z",  
+    "dateDeparture": "2018-12-01T10:40:01.00Z",  
+    "dateSIBT": "2018-12-01T12:40:01.00Z",  
+    "dateSLDT": "2018-12-01T12:35:01.00Z",  
+    "dateSOBT": "2018-12-01T10:40:01.00Z",  
+    "dateSTOT": "2018-12-01T10:45:01.00Z",  
+    "departsFromAirport": "urn:ngsi-ld:Airline:airport-BMA",  
+    "flightNumber": "3732",  
+    "flightNumberIATA": "SN3732",  
+    "flightNumberICAO": "BEL3732",  
+    "flightType": "G",  
+    "hasAircraft": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
+    "hasAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
+    "passengerCount": 25,  
+    "state": "active",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### フライト NGSI-LDの正規化例  
-正規化されたJSON-LD形式のFlightの例です。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### フライト NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のFlightの例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Flight:flight-3732",  
-  "type": "Flight",  
-  "flightNumber": "3732",  
-  "flightNumberIATA": "SN3732",  
-  "flightNumberICAO": "BEL3732",  
-  "flightType": "G",  
-  "state": "active",  
-  "passengerCount": 25,  
-  "dateDeparture": "2018-12-01T10:40:01.00Z",  
-  "dateArrival": "2018-12-01T12:40:01.00Z",  
-  "dateSOBT": "2018-12-01T10:40:01.00Z",  
-  "dateSTOT": "2018-12-01T10:45:01.00Z",  
-  "dateSLDT": "2018-12-01T12:35:01.00Z",  
-  "dateSIBT": "2018-12-01T12:40:01.00Z",  
-  "hasAircraft": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
-  "hasAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
-  "departsFromAirport": "urn:ngsi-ld:Airline:airport-BMA",  
-  "arrivesToAirport": "urn:ngsi-ld:Airline:airport-MAD",  
-  "belongsToAirline": "urn:ngsi-ld:Airline:airline-SN",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Flight:flight-3732",  
+    "type": "Flight",  
+    "arrivesToAirport": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Airline:airport-MAD"  
+    },  
+    "belongsToAirline": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Airline:airline-SN"  
+    },  
+    "dateArrival": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T12:40:01.00Z"  
+        }  
+    },  
+    "dateDeparture": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T10:40:01.00Z"  
+        }  
+    },  
+    "dateSIBT": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T12:40:01.00Z"  
+        }  
+    },  
+    "dateSLDT": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T12:35:01.00Z"  
+        }  
+    },  
+    "dateSOBT": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T10:40:01.00Z"  
+        }  
+    },  
+    "dateSTOT": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T10:45:01.00Z"  
+        }  
+    },  
+    "departsFromAirport": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Airline:airport-BMA"  
+    },  
+    "flightNumber": {  
+        "type": "Property",  
+        "value": "3732"  
+    },  
+    "flightNumberIATA": {  
+        "type": "Property",  
+        "value": "SN3732"  
+    },  
+    "flightNumberICAO": {  
+        "type": "Property",  
+        "value": "BEL3732"  
+    },  
+    "flightType": {  
+        "type": "Property",  
+        "value": "G"  
+    },  
+    "hasAircraft": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Aircraft:aircraft-ABCDE"  
+    },  
+    "hasAircraftModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"  
+    },  
+    "passengerCount": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "state": {  
+        "type": "Property",  
+        "value": "active"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

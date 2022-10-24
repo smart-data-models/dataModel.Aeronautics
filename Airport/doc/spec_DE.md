@@ -1,17 +1,32 @@
-Entität: Flughafen  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: Flughafen  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/Airport/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Eine Beschreibung eines generischen Flughafens**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `codeIATA`: IATA-Flughafen-Code  - `codeICAO`: ICAO-Flughafen-Code  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI Entity-Typ. Es muss Airport sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `codeIATA[string]`: IATA-Flughafencode  . Model: [http://schema.org/Text](http://schema.org/Text)- `codeICAO[string]`: ICAO-Flughafencode  . Model: [http://schema.org/Text](http://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Entitätstyp. Es muss Flughafen sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `name`  - `type`    
-Die Entität "Flughafen" enthält eine Beschreibung eines generischen Flughafens mit den von der Luftfahrtindustrie verwendeten Standardparametern.  
+- `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Die Entität Flughafen enthält eine Beschreibung eines generischen Flughafens mit den von der Luftfahrtindustrie verwendeten Standardparametern.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Airport:    
@@ -38,43 +53,57 @@ Airport:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     codeIATA:    
       description: 'IATA airport code'    
       pattern: ^[A-Z]{3}    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     codeICAO:    
       description: 'ICAO airport code'    
       pattern: ^[A-Z]{4}$    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &airport_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -86,7 +115,8 @@ Airport:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -238,16 +268,21 @@ Airport:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *airport_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -258,25 +293,41 @@ Airport:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be Airport'    
       enum:    
         - Airport    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
     - name    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/Airport/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/Airport/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
-#### Flughafen NGSI-v2-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Flughafen im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+#### Flughafen NGSI-v2 Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für einen Flughafen im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "airport-BMA",  
@@ -295,22 +346,28 @@ Airport:
     }  
 }  
 ```  
+</details>  
 #### Flughafen NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel eines Flughafens im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen Flughafen im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "airport-BMA",  
     "type": "Airport",  
     "codeIATA": {  
+        "type": "Text",  
         "value": "BMA"  
     },  
     "codeICAO": {  
+        "type": "Text",  
         "value": "ESSB"  
     },  
     "name": {  
+        "type": "Text",  
         "value": "Bromma Stockholm Airport"  
     },  
     "alternateName": {  
+        "type": "Text",  
         "value": "Stockholm Airport"  
     },  
     "address": {  
@@ -329,79 +386,91 @@ Airport:
     }  
 }  
 ```  
-#### Flughafen NGSI-LD-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Flughafen im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+</details>  
+#### Flughafen NGSI-LD Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für einen Flughafen im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Airline:airport-BMA",  
-  "type": "Airport",  
-  "codeIATA": {  
-    "type": "Property",  
-    "value": "BMA"  
-  },  
-  "codeICAO": {  
-    "type": "Property",  
-    "value": "ESSB"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Bromma Stockholm Airport"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Stockholm Airport"  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "SE",  
-      "addressLocality": "Stockholm",  
-      "type": "PostalAddress"  
-    }  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        59.354444,  
-        17.939722,  
-        14  
-      ]  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### Flughafen NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel eines Flughafens im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
-```json  
-{  
-  "id": "urn:ngsi-ld:Airline:airport-BMA",  
-  "type": "Airport",  
-  "codeIATA": "BMA",  
-  "codeICAO": "ESSB",  
-  "name": "Bromma Stockholm Airport",  
-  "alternateName": "Stockholm Airport",  
-  "address": {  
-    "addressCountry": "SE",  
-    "addressLocality": "Stockholm"  
-  },  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      59.354444,  
-      17.939722,  
-      14  
+    "id": "urn:ngsi-ld:Airline:airport-BMA",  
+    "type": "Airport",  
+    "address": {  
+        "addressCountry": "SE",  
+        "addressLocality": "Stockholm"  
+    },  
+    "alternateName": "Stockholm Airport",  
+    "codeIATA": "BMA",  
+    "codeICAO": "ESSB",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            59.354444,  
+            17.939722,  
+            14  
+        ]  
+    },  
+    "name": "Bromma Stockholm Airport",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
     ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details>  
+#### Flughafen NGSI-LD normalisiert Beispiel  
+Hier ist ein Beispiel für einen Flughafen im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Airline:airport-BMA",  
+    "type": "Airport",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "SE",  
+            "addressLocality": "Stockholm",  
+            "type": "PostalAddress"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Stockholm Airport"  
+    },  
+    "codeIATA": {  
+        "type": "Property",  
+        "value": "BMA"  
+    },  
+    "codeICAO": {  
+        "type": "Property",  
+        "value": "ESSB"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                59.354444,  
+                17.939722,  
+                14  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Bromma Stockholm Airport"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

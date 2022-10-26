@@ -1,17 +1,32 @@
-Entity: Flight  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: Flight  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/Flight/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **A description of a generic flight**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `arrivesToAirport`: Reference to the arrival airport entity  - `belongsToAirline`: Reference to the airline entity  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateAIBT`: Actual In-Block Time  - `dateALDT`: Actual Landing Time  - `dateAOBT`: Actual Off-Block Time  - `dateATO`: Actual Time Over  - `dateATOT`: Actual Take-Off Time  - `dateAXIT`: Actual Taxi-In Time  - `dateAXOT`: Actual Taxi-Out Time  - `dateArrival`: Arrival date of the flight  - `dateCIBT`: Calculated In-Block Time  - `dateCLDT`: Calculated Landing Time  - `dateCOBT`: Calculated Off-Block Time  - `dateCTO`: Calculated Time Over  - `dateCTOT`: Calculated Take-Off Time  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateDeparture`: Departure date of the flight  - `dateEIBT`: Estimated In-Block Time  - `dateELDT`: Estimated Landing Time  - `dateEOBT`: Estimated Off-Block Time  - `dateETO`: Estimated Time Over  - `dateETOT`: Estimated Take-Off Time  - `dateEXIT`: Estimated Taxi-In Time  - `dateEXOT`: Estimated Taxi-Out Time  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateSIBT`: Scheduled In-Block Time  - `dateSLDT`: Scheduled Landing Time  - `dateSOBT`: Scheduled Off-Block Time  - `dateSTOT`: Scheduled Take-Off Time  - `dateTIBT`: Target In-Block Time  - `dateTLDT`: Target Landing Time  - `dateTOBT`: Target Off-Block Time  - `dateTSAT`: Target Start Up Approval Time  - `dateTTOT`: Target Take-Off Time  - `departsFromAirport`: Reference to the departure airport entity  - `description`: A description of this item  - `flightNumber`: Flight identifier without information of airline  - `flightNumberIATA`: IATA flight identifier  - `flightNumberICAO`: ICAO flight identifier  - `flightType`: Flight type described as ICAO doc 4444 Appendix 2. Enum:'S, N, G, M, X'  - `hasAircraft`: Reference to the aircraft entity  - `hasAircraftModel`: Reference to the aircraft model entity  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `passengerCount`: Number of flight passengers  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `state`: Current state of the flight. Enum:'scheduled, active, unknown, redirected, landed, diverted, cancelled'  - `type`: NGSI Entity type. It has to be Flight    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivesToAirport[*]`: Reference to the arrival airport entity  - `belongsToAirline[*]`: Reference to the airline entity  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateAIBT[string]`: Actual In-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateALDT[string]`: Actual Landing Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAOBT[string]`: Actual Off-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateATO[string]`: Actual Time Over  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateATOT[string]`: Actual Take-Off Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAXIT[string]`: Actual Taxi-In Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAXOT[string]`: Actual Taxi-Out Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateArrival[string]`: Arrival date of the flight  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCIBT[string]`: Calculated In-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCLDT[string]`: Calculated Landing Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCOBT[string]`: Calculated Off-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCTO[string]`: Calculated Time Over  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCTOT[string]`: Calculated Take-Off Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateDeparture[string]`: Departure date of the flight  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEIBT[string]`: Estimated In-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateELDT[string]`: Estimated Landing Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEOBT[string]`: Estimated Off-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateETO[string]`: Estimated Time Over  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateETOT[string]`: Estimated Take-Off Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEXIT[string]`: Estimated Taxi-In Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEXOT[string]`: Estimated Taxi-Out Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateSIBT[string]`: Scheduled In-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSLDT[string]`: Scheduled Landing Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSOBT[string]`: Scheduled Off-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSTOT[string]`: Scheduled Take-Off Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTIBT[string]`: Target In-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTLDT[string]`: Target Landing Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTOBT[string]`: Target Off-Block Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTSAT[string]`: Target Start Up Approval Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTTOT[string]`: Target Take-Off Time  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `departsFromAirport[*]`: Reference to the departure airport entity  - `description[string]`: A description of this item  - `flightNumber[string]`: Flight identifier without information of airline  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightNumberIATA[string]`: IATA flight identifier  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightNumberICAO[string]`: ICAO flight identifier  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightType[string]`: Flight type described as ICAO doc 4444 Appendix 2. Enum:'S, N, G, M, X'  . Model: [http://schema.org/Text](http://schema.org/Text)- `hasAircraft[*]`: Reference to the aircraft entity  - `hasAircraftModel[*]`: Reference to the aircraft model entity  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `passengerCount[integer]`: Number of flight passengers  . Model: [http://schema.org/Integer](http://schema.org/Integer)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `state[string]`: Current state of the flight. Enum:'scheduled, active, unknown, redirected, landed, diverted, cancelled'  . Model: [http://schema.org/Text](http://schema.org/Text)- `type[string]`: NGSI Entity type. It has to be Flight  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Flight entity contains a description of a generic flight with the standard parameters used by the airline industry. This model is based on specifications published by the main organisms of the industry such us [EUROCONTROL](https://www.eurocontrol.int/), [ICAO](https://www.icao.int/) and [IATA](https://www.iata.org/).  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Flight:    
@@ -601,11 +616,22 @@ Flight:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/Flight/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/Flight/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### Flight NGSI-v2 key-values Example    
 Here is an example of a Flight in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "flight-3732",  
@@ -629,28 +655,36 @@ Flight:
     "belongsToAirline": "airline-SN"  
 }  
 ```  
+</details>  
 #### Flight NGSI-v2 normalized Example    
 Here is an example of a Flight in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "flight-3732",  
     "type": "Flight",  
     "flightNumber": {  
+        "type": "Text",  
         "value": "3732"  
     },  
     "flightNumberIATA": {  
+        "type": "Text",  
         "value": "SN3732"  
     },  
     "flightNumberICAO": {  
+        "type": "Text",  
         "value": "BEL3732"  
     },  
     "flightType": {  
+        "type": "Text",  
         "value": "G"  
     },  
     "state": {  
+        "type": "Text",  
         "value": "active"  
     },  
     "passengerCount": {  
+        "type": "Number",  
         "value": 25  
     },  
     "dateDeparture": {  
@@ -699,131 +733,143 @@ Flight:
     }  
 }  
 ```  
+</details>  
 #### Flight NGSI-LD key-values Example    
 Here is an example of a Flight in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Flight:flight-3732",  
-  "type": "Flight",  
-  "flightNumber": {  
-    "type": "Property",  
-    "value": "3732"  
-  },  
-  "flightNumberIATA": {  
-    "type": "Property",  
-    "value": "SN3732"  
-  },  
-  "flightNumberICAO": {  
-    "type": "Property",  
-    "value": "BEL3732"  
-  },  
-  "flightType": {  
-    "type": "Property",  
-    "value": "G"  
-  },  
-  "state": {  
-    "type": "Property",  
-    "value": "active"  
-  },  
-  "passengerCount": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "dateDeparture": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T10:40:01.00Z"  
-    }  
-  },  
-  "dateArrival": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T12:40:01.00Z"  
-    }  
-  },  
-  "dateSOBT": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T10:40:01.00Z"  
-    }  
-  },  
-  "dateSTOT": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T10:45:01.00Z"  
-    }  
-  },  
-  "dateSLDT": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T12:35:01.00Z"  
-    }  
-  },  
-  "dateSIBT": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2018-12-01T12:40:01.00Z"  
-    }  
-  },  
-  "hasAircraft": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Aircraft:aircraft-ABCDE"  
-  },  
-  "hasAircraftModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"  
-  },  
-  "departsFromAirport": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Airline:airport-BMA"  
-  },  
-  "arrivesToAirport": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Airline:airport-MAD"  
-  },  
-  "belongsToAirline": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Airline:airline-SN"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Flight:flight-3732",  
+    "type": "Flight",  
+    "arrivesToAirport": "urn:ngsi-ld:Airline:airport-MAD",  
+    "belongsToAirline": "urn:ngsi-ld:Airline:airline-SN",  
+    "dateArrival": "2018-12-01T12:40:01.00Z",  
+    "dateDeparture": "2018-12-01T10:40:01.00Z",  
+    "dateSIBT": "2018-12-01T12:40:01.00Z",  
+    "dateSLDT": "2018-12-01T12:35:01.00Z",  
+    "dateSOBT": "2018-12-01T10:40:01.00Z",  
+    "dateSTOT": "2018-12-01T10:45:01.00Z",  
+    "departsFromAirport": "urn:ngsi-ld:Airline:airport-BMA",  
+    "flightNumber": "3732",  
+    "flightNumberIATA": "SN3732",  
+    "flightNumberICAO": "BEL3732",  
+    "flightType": "G",  
+    "hasAircraft": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
+    "hasAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
+    "passengerCount": 25,  
+    "state": "active",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### Flight NGSI-LD normalized Example    
 Here is an example of a Flight in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Flight:flight-3732",  
-  "type": "Flight",  
-  "flightNumber": "3732",  
-  "flightNumberIATA": "SN3732",  
-  "flightNumberICAO": "BEL3732",  
-  "flightType": "G",  
-  "state": "active",  
-  "passengerCount": 25,  
-  "dateDeparture": "2018-12-01T10:40:01.00Z",  
-  "dateArrival": "2018-12-01T12:40:01.00Z",  
-  "dateSOBT": "2018-12-01T10:40:01.00Z",  
-  "dateSTOT": "2018-12-01T10:45:01.00Z",  
-  "dateSLDT": "2018-12-01T12:35:01.00Z",  
-  "dateSIBT": "2018-12-01T12:40:01.00Z",  
-  "hasAircraft": "urn:ngsi-ld:Aircraft:aircraft-ABCDE",  
-  "hasAircraftModel": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200",  
-  "departsFromAirport": "urn:ngsi-ld:Airline:airport-BMA",  
-  "arrivesToAirport": "urn:ngsi-ld:Airline:airport-MAD",  
-  "belongsToAirline": "urn:ngsi-ld:Airline:airline-SN",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:Flight:flight-3732",  
+    "type": "Flight",  
+    "arrivesToAirport": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Airline:airport-MAD"  
+    },  
+    "belongsToAirline": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Airline:airline-SN"  
+    },  
+    "dateArrival": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T12:40:01.00Z"  
+        }  
+    },  
+    "dateDeparture": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T10:40:01.00Z"  
+        }  
+    },  
+    "dateSIBT": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T12:40:01.00Z"  
+        }  
+    },  
+    "dateSLDT": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T12:35:01.00Z"  
+        }  
+    },  
+    "dateSOBT": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T10:40:01.00Z"  
+        }  
+    },  
+    "dateSTOT": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2018-12-01T10:45:01.00Z"  
+        }  
+    },  
+    "departsFromAirport": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Airline:airport-BMA"  
+    },  
+    "flightNumber": {  
+        "type": "Property",  
+        "value": "3732"  
+    },  
+    "flightNumberIATA": {  
+        "type": "Property",  
+        "value": "SN3732"  
+    },  
+    "flightNumberICAO": {  
+        "type": "Property",  
+        "value": "BEL3732"  
+    },  
+    "flightType": {  
+        "type": "Property",  
+        "value": "G"  
+    },  
+    "hasAircraft": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Aircraft:aircraft-ABCDE"  
+    },  
+    "hasAircraftModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"  
+    },  
+    "passengerCount": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "state": {  
+        "type": "Property",  
+        "value": "active"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

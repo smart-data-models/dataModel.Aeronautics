@@ -1,17 +1,32 @@
-Entity: FlightNotification  
-==========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: FlightNotification  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.Aeronautics/blob/master/FlightNotification/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **A description of a generic flight notification**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `belongsToFlight`: Reference to the flight entity  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateIssued`: Date when the notification was created  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `state`: Current state of the flight notification. Enum:'active, inactive, completed, unknown'  - `type`: NGSI Entity type. It has to be FlightNotification    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `belongsToFlight[*]`: Reference to the flight entity  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateIssued[string]`: Date when the notification was created  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `state[string]`: Current state of the flight notification. Enum:'active, inactive, completed, unknown'  . Model: [http://schema.org/Text](http://schema.org/Text)- `type[string]`: NGSI Entity type. It has to be FlightNotification  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `belongsToFlight`  - `dateIssued`  - `description`  - `id`  - `type`    
+- `belongsToFlight`  - `dateIssued`  - `description`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Flight Notification entity contains a description of a generic notification during flight operation and preparation.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 FlightNotification:    
@@ -314,11 +329,22 @@ FlightNotification:
     - dateIssued    
     - description    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/FlightNotification/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/FlightNotification/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### FlightNotification NGSI-v2 key-values Example    
 Here is an example of a FlightNotification in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "3732:2020-12-09T19:01:35.865Z",  
@@ -330,16 +356,20 @@ FlightNotification:
     "dataProvider": "Employee 001"  
 }  
 ```  
+</details>  
 #### FlightNotification NGSI-v2 normalized Example    
 Here is an example of a FlightNotification in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "3732:2020-12-09T19:01:35.865Z",  
     "type": "FlightNotification",  
     "description": {  
+        "type": "Text",  
         "value": "Delay of five minutes"  
     },  
     "state": {  
+        "type": "Text",  
         "value": "active"  
     },  
     "dateIssued": {  
@@ -351,60 +381,73 @@ FlightNotification:
         "value": "flight-3732"  
     },  
     "dataProvider": {  
+        "type": "Text",  
         "value": "Employee 001"  
     }  
 }  
 ```  
+</details>  
 #### FlightNotification NGSI-LD key-values Example    
 Here is an example of a FlightNotification in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z",  
-  "type": "FlightNotification",  
-  "description": {  
-    "type": "Property",  
-    "value": "Delay of five minutes"  
-  },  
-  "state": {  
-    "type": "Property",  
-    "value": "active"  
-  },  
-  "dateIssued": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-12-09T19:01:35.865Z"  
-    }  
-  },  
-  "belongsToFlight": {  
-    "type": "Relationship",  
-    "value": "urn:ngsi-ld:Flight:flight-3732"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Employee 001"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z",  
+    "type": "FlightNotification",  
+    "belongsToFlight": "urn:ngsi-ld:Flight:flight-3732",  
+    "dataProvider": "Employee 001",  
+    "dateIssued": "2020-12-09T19:01:35.865Z",  
+    "description": "Delay of five minutes",  
+    "state": "active",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### FlightNotification NGSI-LD normalized Example    
 Here is an example of a FlightNotification in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z",  
-  "type": "FlightNotification",  
-  "description": "Delay of five minutes",  
-  "state": "active",  
-  "dateIssued": "2020-12-09T19:01:35.865Z",  
-  "belongsToFlight": "urn:ngsi-ld:Flight:flight-3732",  
-  "dataProvider": "Employee 001",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:FlightNotification:3732:2020-12-09T19:01:35.865Z",  
+    "type": "FlightNotification",  
+    "belongsToFlight": {  
+        "type": "Relationship",  
+        "value": "urn:ngsi-ld:Flight:flight-3732"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Employee 001"  
+    },  
+    "dateIssued": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-12-09T19:01:35.865Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Delay of five minutes"  
+    },  
+    "state": {  
+        "type": "Property",  
+        "value": "active"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Aeronautics/master/context.jsonld"  
+    ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

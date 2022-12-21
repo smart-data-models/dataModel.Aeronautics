@@ -1,0 +1,3 @@
+/* (Beta) Export of data model AircraftModel of the subject dataModel.Aeronautics for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE AircraftModel_type AS ENUM ('AircraftModel');
+CREATE TABLE AircraftModel (address json, alternateName text, areaServed text, capacity integer, ceiling text, codeIATA text, codeICAO text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, height text, id text, length text, location json, maximumAllowedFuel text, maximumAllowedSpeed text, mtow text, name text, numberOfEngines integer, owner json, seeAlso json, source text, type AircraftModel_type, wingSpan text);

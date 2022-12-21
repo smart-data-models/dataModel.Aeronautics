@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Airport of the subject dataModel.Aeronautics for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Airport_type AS ENUM ('Airport');
+CREATE TABLE Airport (address json, alternateName text, areaServed text, codeIATA text, codeICAO text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type Airport_type);

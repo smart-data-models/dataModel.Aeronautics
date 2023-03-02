@@ -1,5 +1,11 @@
 {
     "@context": {
+        "Aircraft": "https://smartdatamodels.org/dataModel.Aeronautics/Aircraft",
+        "AircraftModel": "https://smartdatamodels.org/dataModel.Aeronautics/AircraftModel",
+        "Airline": "https://smartdatamodels.org/dataModel.Aeronautics/Airline",
+        "Airport": "https://smartdatamodels.org/dataModel.Aeronautics/Airport",
+        "Flight": "https://smartdatamodels.org/dataModel.Aeronautics/Flight",
+        "FlightNotification": "https://smartdatamodels.org/dataModel.Aeronautics/FlightNotification",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",

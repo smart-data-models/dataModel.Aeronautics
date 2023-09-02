@@ -1,88 +1,70 @@
 AircraftModel:
-
   description: A description of a generic aircraft model
-
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     capacity:
       description: Number of seatings
       minimum: 0
@@ -90,7 +72,6 @@ AircraftModel:
       x-ngsi:
         model: http://schema.org/Integer
         type: Property
-
     ceiling:
       description: Maximum altitude the aircraft model can reach in metres
       minimum: 0
@@ -99,7 +80,6 @@ AircraftModel:
         model: http://schema.org/Number
         type: Property
         units: metres
-
     codeIATA:
       description: IATA aircraft type
       pattern: ^[A-Z0-9]{3}$
@@ -107,7 +87,6 @@ AircraftModel:
       x-ngsi:
         model: http://schema.org/Text
         type: Property
-
     codeICAO:
       description: ICAO aircraft type
       pattern: ^[A-Z]{1}[A-Z0-9]{3}$
@@ -115,33 +94,28 @@ AircraftModel:
       x-ngsi:
         model: http://schema.org/Text
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     height:
       description: Aircraft model height in metres
       minimum: 0
@@ -150,7 +124,6 @@ AircraftModel:
         model: http://schema.org/Number
         type: Property
         units: metres
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -168,7 +141,6 @@ AircraftModel:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     length:
       description: Aircraft model length in metres
       minimum: 0
@@ -177,13 +149,9 @@ AircraftModel:
         model: http://schema.org/Number
         type: Property
         units: metres
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -207,7 +175,6 @@ AircraftModel:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -234,7 +201,6 @@ AircraftModel:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -263,7 +229,6 @@ AircraftModel:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -289,7 +254,6 @@ AircraftModel:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -318,7 +282,6 @@ AircraftModel:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -349,10 +312,8 @@ AircraftModel:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     maximumAllowedFuel:
       description: Aircraft maximum fuel in kilograms
       minimum: 0
@@ -361,7 +322,6 @@ AircraftModel:
         model: http://schema.org/Number
         type: Property
         units: kilograms
-
     maximumAllowedSpeed:
       description: ' Aircraft maximum speed in kilometers per hour'
       minimum: 0
@@ -370,7 +330,6 @@ AircraftModel:
         model: http://schema.org/Number
         type: Property
         units: kilometers per hour
-
     mtow:
       description: ' Aircraft maximum takeoff weight in kilograms'
       minimum: 0
@@ -379,13 +338,11 @@ AircraftModel:
         model: http://schema.org/Number
         type: Property
         units: kilograms
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     numberOfEngines:
       description: Number of engines
       minimum: 0
@@ -393,7 +350,6 @@ AircraftModel:
       x-ngsi:
         model: http://schema.org/Integer
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -416,7 +372,6 @@ AircraftModel:
       type: array
       x-ngsi:
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -429,13 +384,11 @@ AircraftModel:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     type:
       description: NGSI Entity type. It has to be AircraftModel
       enum:
@@ -443,7 +396,6 @@ AircraftModel:
       type: string
       x-ngsi:
         type: Property
-
     wingSpan:
       description: Aircraft model wingspan in metres
       minimum: 0
@@ -452,22 +404,14 @@ AircraftModel:
         model: http://schema.org/Number
         type: Property
         units: metres
-
   required:
     - id
     - type
     - name
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/AircraftModel/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/AircraftModel/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1

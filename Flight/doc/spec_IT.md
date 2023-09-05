@@ -15,7 +15,14 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivesToAirport[*]`: Riferimento all'entità aeroporto di arrivo  - `belongsToAirline[*]`: Riferimento all'entità compagnia aerea  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateAIBT[string]`: Tempo effettivo di permanenza nel blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateALDT[string]`: Tempo effettivo di atterraggio  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAOBT[string]`: Tempo effettivo fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateATO[string]`: Tempo effettivo di superamento  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateATOT[string]`: Tempo effettivo di decollo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAXIT[string]`: Tempo effettivo di arrivo in taxi  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAXOT[string]`: Tempo effettivo di uscita in taxi  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateArrival[string]`: Data di arrivo del volo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCIBT[string]`: Tempo in-blocco calcolato  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCLDT[string]`: Tempo di atterraggio calcolato  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCOBT[string]`: Tempo calcolato fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCTO[string]`: Tempo calcolato di superamento  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCTOT[string]`: Tempo di decollo calcolato  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateDeparture[string]`: Data di partenza del volo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEIBT[string]`: Tempo stimato di permanenza nel blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateELDT[string]`: Tempo stimato di atterraggio  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEOBT[string]`: Tempo stimato fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateETO[string]`: Tempo stimato di superamento  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateETOT[string]`: Tempo stimato di decollo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEXIT[string]`: Tempo stimato di arrivo in taxi  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEXOT[string]`: Tempo stimato di uscita in taxi  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateSIBT[string]`: Tempo di permanenza programmata nel blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSLDT[string]`: Orario di atterraggio previsto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSOBT[string]`: Tempo programmato fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSTOT[string]`: Orario di decollo previsto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTIBT[string]`: Tempo target in-block  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTLDT[string]`: Tempo di atterraggio target  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTOBT[string]`: Tempo target fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTSAT[string]`: Tempo di approvazione dell'avvio dell'obiettivo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTTOT[string]`: Tempo di decollo previsto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `departsFromAirport[*]`: Riferimento all'entità dell'aeroporto di partenza  - `description[string]`: Descrizione dell'articolo  - `flightNumber[string]`: Identificatore di volo senza informazioni sulla compagnia aerea  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightNumberIATA[string]`: Identificatore di volo IATA  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightNumberICAO[string]`: Identificatore di volo ICAO  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightType[string]`: Tipo di volo descritto come da documento ICAO 4444 Appendice 2. Enum: "S, N, G, M, X".  . Model: [http://schema.org/Text](http://schema.org/Text)- `hasAircraft[*]`: Riferimento all'entità aeromobile  - `hasAircraftModel[*]`: Riferimento all'entità del modello di aeromobile  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `passengerCount[integer]`: Numero di passeggeri del volo  . Model: [http://schema.org/Integer](http://schema.org/Integer)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `state[string]`: Stato attuale del volo. Enum:'programmato, attivo, sconosciuto, reindirizzato, atterrato, deviato, cancellato'.  . Model: [http://schema.org/Text](http://schema.org/Text)- `type[string]`: Tipo di entità NGSI. Deve essere Volo  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivesToAirport[*]`: Riferimento all'entità aeroporto di arrivo  - `belongsToAirline[*]`: Riferimento all'entità compagnia aerea  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateAIBT[date-time]`: Tempo effettivo di permanenza nel blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateALDT[date-time]`: Tempo effettivo di atterraggio  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAOBT[date-time]`: Tempo effettivo fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateATO[date-time]`: Tempo effettivo di superamento  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateATOT[date-time]`: Tempo effettivo di decollo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAXIT[date-time]`: Tempo effettivo di arrivo in taxi  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateAXOT[date-time]`: Tempo effettivo di uscita in taxi  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateArrival[date-time]`: Data di arrivo del volo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCIBT[date-time]`: Tempo in-blocco calcolato  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCLDT[date-time]`: Tempo di atterraggio calcolato  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCOBT[date-time]`: Tempo calcolato fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCTO[date-time]`: Tempo calcolato di superamento  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCTOT[date-time]`: Tempo di decollo calcolato  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateDeparture[date-time]`: Data di partenza del volo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEIBT[date-time]`: Tempo stimato di permanenza nel blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateELDT[date-time]`: Tempo stimato di atterraggio  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEOBT[date-time]`: Tempo stimato fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateETO[date-time]`: Tempo stimato di superamento  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateETOT[date-time]`: Tempo stimato di decollo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEXIT[date-time]`: Tempo stimato di arrivo in taxi  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateEXOT[date-time]`: Tempo stimato di uscita in taxi  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateSIBT[date-time]`: Tempo di permanenza programmata nel blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSLDT[date-time]`: Orario di atterraggio previsto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSOBT[date-time]`: Tempo programmato fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateSTOT[date-time]`: Orario di decollo previsto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTIBT[date-time]`: Tempo target in-block  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTLDT[date-time]`: Tempo di atterraggio target  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTOBT[date-time]`: Tempo target fuori dal blocco  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTSAT[date-time]`: Tempo di approvazione dell'avvio dell'obiettivo  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateTTOT[date-time]`: Tempo di decollo previsto  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `departsFromAirport[*]`: Riferimento all'entità dell'aeroporto di partenza  - `description[string]`: Descrizione dell'articolo  - `flightNumber[string]`: Identificatore di volo senza informazioni sulla compagnia aerea  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightNumberIATA[string]`: Identificatore di volo IATA  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightNumberICAO[string]`: Identificatore di volo ICAO  . Model: [http://schema.org/Text](http://schema.org/Text)- `flightType[string]`: Tipo di volo descritto come da documento ICAO 4444 Appendice 2. Enum: "S, N, G, M, X".  . Model: [http://schema.org/Text](http://schema.org/Text)- `hasAircraft[*]`: Riferimento all'entità aeromobile  - `hasAircraftModel[*]`: Riferimento all'entità del modello di aeromobile  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `passengerCount[number]`: Numero di passeggeri del volo  . Model: [http://schema.org/Integer](http://schema.org/Integer)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `state[string]`: Stato attuale del volo. Enum:'programmato, attivo, sconosciuto, reindirizzato, atterrato, deviato, cancellato'.  . Model: [http://schema.org/Text](http://schema.org/Text)- `type[string]`: Tipo di entità NGSI. Deve essere Volo  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -30,40 +37,68 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Flight:    
-  description: 'A description of a generic flight'    
+  description: A description of a generic flight    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -76,7 +111,7 @@ Flight:
           type: string    
         - format: uri    
           type: string    
-      description: 'Reference to the arrival airport entity'    
+      description: Reference to the arrival airport entity    
       x-ngsi:    
         type: Relationship    
     belongsToAirline:    
@@ -87,231 +122,231 @@ Flight:
           type: string    
         - format: uri    
           type: string    
-      description: 'Reference to the airline entity'    
+      description: Reference to the airline entity    
       x-ngsi:    
         type: Relationship    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateAIBT:    
-      description: 'Actual In-Block Time'    
+      description: Actual In-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateALDT:    
-      description: 'Actual Landing Time'    
+      description: Actual Landing Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateAOBT:    
-      description: 'Actual Off-Block Time'    
+      description: Actual Off-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateATO:    
-      description: 'Actual Time Over'    
+      description: Actual Time Over    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateATOT:    
-      description: 'Actual Take-Off Time'    
+      description: Actual Take-Off Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateAXIT:    
-      description: 'Actual Taxi-In Time'    
+      description: Actual Taxi-In Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateAXOT:    
-      description: 'Actual Taxi-Out Time'    
+      description: Actual Taxi-Out Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateArrival:    
-      description: 'Arrival date of the flight'    
+      description: Arrival date of the flight    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateCIBT:    
-      description: 'Calculated In-Block Time'    
+      description: Calculated In-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateCLDT:    
-      description: 'Calculated Landing Time'    
+      description: Calculated Landing Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateCOBT:    
-      description: 'Calculated Off-Block Time'    
+      description: Calculated Off-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateCTO:    
-      description: 'Calculated Time Over'    
+      description: Calculated Time Over    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateCTOT:    
-      description: 'Calculated Take-Off Time'    
+      description: Calculated Take-Off Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateDeparture:    
-      description: 'Departure date of the flight'    
+      description: Departure date of the flight    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateEIBT:    
-      description: 'Estimated In-Block Time'    
+      description: Estimated In-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateELDT:    
-      description: 'Estimated Landing Time'    
+      description: Estimated Landing Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateEOBT:    
-      description: 'Estimated Off-Block Time'    
+      description: Estimated Off-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateETO:    
-      description: 'Estimated Time Over'    
+      description: Estimated Time Over    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateETOT:    
-      description: 'Estimated Take-Off Time'    
+      description: Estimated Take-Off Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateEXIT:    
-      description: 'Estimated Taxi-In Time'    
+      description: Estimated Taxi-In Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateEXOT:    
-      description: 'Estimated Taxi-Out Time'    
+      description: Estimated Taxi-Out Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateSIBT:    
-      description: 'Scheduled In-Block Time'    
+      description: Scheduled In-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateSLDT:    
-      description: 'Scheduled Landing Time'    
+      description: Scheduled Landing Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateSOBT:    
-      description: 'Scheduled Off-Block Time'    
+      description: Scheduled Off-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateSTOT:    
-      description: 'Scheduled Take-Off Time'    
+      description: Scheduled Take-Off Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateTIBT:    
-      description: 'Target In-Block Time'    
+      description: Target In-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateTLDT:    
-      description: 'Target Landing Time'    
+      description: Target Landing Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateTOBT:    
-      description: 'Target Off-Block Time'    
+      description: Target Off-Block Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateTSAT:    
-      description: 'Target Start Up Approval Time'    
+      description: Target Start Up Approval Time    
       format: date-time    
       type: string    
       x-ngsi:    
         model: http://schema.org/DateTime    
         type: Property    
     dateTTOT:    
-      description: 'Target Take-Off Time'    
+      description: Target Take-Off Time    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -325,30 +360,30 @@ Flight:
           type: string    
         - format: uri    
           type: string    
-      description: 'Reference to the departure airport entity'    
+      description: Reference to the departure airport entity    
       x-ngsi:    
         type: Relationship    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     flightNumber:    
-      description: 'Flight identifier without information of airline'    
+      description: Flight identifier without information of airline    
       pattern: ^[A-Z0-9]{1,}$    
       type: string    
       x-ngsi:    
         model: http://schema.org/Text    
         type: Property    
     flightNumberIATA:    
-      description: 'IATA flight identifier'    
+      description: IATA flight identifier    
       pattern: ^[A-Z0-9]{3,}$    
       type: string    
       x-ngsi:    
         model: http://schema.org/Text    
         type: Property    
     flightNumberICAO:    
-      description: 'ICAO flight identifier'    
+      description: ICAO flight identifier    
       pattern: ^[A-Z]{3}[A-Z0-9]{1,}$    
       type: string    
       x-ngsi:    
@@ -374,7 +409,7 @@ Flight:
           type: string    
         - format: uri    
           type: string    
-      description: 'Reference to the aircraft entity'    
+      description: Reference to the aircraft entity    
       x-ngsi:    
         type: Relationship    
     hasAircraftModel:    
@@ -385,26 +420,30 @@ Flight:
           type: string    
         - format: uri    
           type: string    
-      description: 'Reference to the aircraft model entity'    
+      description: Reference to the aircraft model entity    
       x-ngsi:    
         type: Relationship    
     id:    
-      anyOf: &flight_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -423,9 +462,11 @@ Flight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -447,9 +488,11 @@ Flight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -473,9 +516,11 @@ Flight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -496,9 +541,11 @@ Flight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -522,9 +569,11 @@ Flight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -550,32 +599,48 @@ Flight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *flight_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     passengerCount:    
-      description: 'Number of flight passengers'    
+      description: Number of flight passengers    
       minimum: 0    
-      type: integer    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Integer    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -587,7 +652,7 @@ Flight:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -606,7 +671,7 @@ Flight:
         model: http://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be Flight'    
+      description: NGSI Entity type. It has to be Flight    
       enum:    
         - Flight    
       type: string    
@@ -617,7 +682,7 @@ Flight:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Aeronautics/blob/master/Flight/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Aeronautics/Flight/schema.json    
   x-model-tags: ""    

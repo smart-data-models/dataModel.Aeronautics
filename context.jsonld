@@ -13,6 +13,10 @@
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "arrivesToAirport": "https://smartdatamodels.org/dataModel.Aeronautics/arrivesToAirport",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "belongsToAircraftModel": "https://smartdatamodels.org/dataModel.Aeronautics/belongsToAircraftModel",
         "belongsToAirline": "https://smartdatamodels.org/dataModel.Aeronautics/belongsToAirline",
         "belongsToFlight": "https://smartdatamodels.org/dataModel.Aeronautics/belongsToFlight",
@@ -21,6 +25,10 @@
         "ceiling": "https://smartdatamodels.org/dataModel.Aeronautics/ceiling",
         "codeIATA": "https://smartdatamodels.org/dataModel.Aeronautics/codeIATA",
         "codeICAO": "https://smartdatamodels.org/dataModel.Aeronautics/codeICAO",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateAIBT": "https://smartdatamodels.org/dataModel.Aeronautics/dateAIBT",
         "dateALDT": "https://smartdatamodels.org/dataModel.Aeronautics/dateALDT",

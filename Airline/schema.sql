@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Airline of the subject dataModel.Aeronautics for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Airline_type AS ENUM ('Airline');
-CREATE TABLE Airline (address JSON, alternateName TEXT, areaServed TEXT, callSign TEXT, codeIATA TEXT, codeICAO TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type Airline_type);
+CREATE TABLE Airline (address JSON, alternateName TEXT, areaServed TEXT, callSign TEXT, codeIATA TEXT, codeICAO TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, type Airline_type);

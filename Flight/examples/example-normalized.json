@@ -1,72 +1,72 @@
 {
-    "id": "flight-3732",
-    "type": "Flight",
-    "flightNumber": {
-        "type": "Text",
-        "value": "3732"
-    },
-    "flightNumberIATA": {
-        "type": "Text",
-        "value": "SN3732"
-    },
-    "flightNumberICAO": {
-        "type": "Text",
-        "value": "BEL3732"
-    },
-    "flightType": {
-        "type": "Text",
-        "value": "G"
-    },
-    "state": {
-        "type": "Text",
-        "value": "active"
-    },
-    "passengerCount": {
-        "type": "Number",
-        "value": 25
-    },
-    "dateDeparture": {
-        "type": "DateTime",
-        "value": "2018-12-01T10:40:01.00Z"
-    },
-    "dateArrival": {
-        "type": "DateTime",
-        "value": "2018-12-01T12:40:01.00Z"
-    },
-    "dateSOBT": {
-        "type": "DateTime",
-        "value": "2018-12-01T10:40:01.00Z"
-    },
-    "dateSTOT": {
-        "type": "DateTime",
-        "value": "2018-12-01T10:45:01.00Z"
-    },
-    "dateSLDT": {
-        "type": "DateTime",
-        "value": "2018-12-01T12:35:01.00Z"
-    },
-    "dateSIBT": {
-        "type": "DateTime",
-        "value": "2018-12-01T12:40:01.00Z"
-    },
-    "hasAircraft": {
-        "type": "Relationship",
-        "value": "aircraft-ABCDE"
-    },
-    "hasAircraftModel": {
-        "type": "Relationship",
-        "value": "aircraftModel-AirbusA310-200"
-    },
-    "departsFromAirport": {
-        "type": "Relationship",
-        "value": "airport-BMA"
-    },
-    "arrivesToAirport": {
-        "type": "Relationship",
-        "value": "airport-MAD"
-    },
-    "belongsToAirline": {
-        "type": "Relationship",
-        "value": "airline-SN"
-    }
+  "id": "flight-3732",
+  "type": "Flight",
+  "flightNumber": {
+    "type": "Text",
+    "value": "3732"
+  },
+  "flightNumberIATA": {
+    "type": "Text",
+    "value": "SN3732"
+  },
+  "flightNumberICAO": {
+    "type": "Text",
+    "value": "BEL3732"
+  },
+  "flightType": {
+    "type": "Text",
+    "value": "G"
+  },
+  "state": {
+    "type": "Text",
+    "value": "active"
+  },
+  "passengerCount": {
+    "type": "Number",
+    "value": 25
+  },
+  "dateDeparture": {
+    "type": "DateTime",
+    "value": "2018-12-01T10:40:01.00Z"
+  },
+  "dateArrival": {
+    "type": "DateTime",
+    "value": "2018-12-01T12:40:01.00Z"
+  },
+  "dateSOBT": {
+    "type": "DateTime",
+    "value": "2018-12-01T10:40:01.00Z"
+  },
+  "dateSTOT": {
+    "type": "DateTime",
+    "value": "2018-12-01T10:45:01.00Z"
+  },
+  "dateSLDT": {
+    "type": "DateTime",
+    "value": "2018-12-01T12:35:01.00Z"
+  },
+  "dateSIBT": {
+    "type": "DateTime",
+    "value": "2018-12-01T12:40:01.00Z"
+  },
+  "hasAircraft": {
+    "type": "Text",
+    "value": "aircraft-ABCDE"
+  },
+  "hasAircraftModel": {
+    "type": "Text",
+    "value": "aircraftModel-AirbusA310-200"
+  },
+  "departsFromAirport": {
+    "type": "Text",
+    "value": "airport-BMA"
+  },
+  "arrivesToAirport": {
+    "type": "Text",
+    "value": "airport-MAD"
+  },
+  "belongsToAirline": {
+    "type": "Text",
+    "value": "airline-SN"
+  }
 }

@@ -1,34 +1,38 @@
 {
-    "id": "airport-BMA",
-    "type": "Airport",
-    "codeIATA": {
-        "type": "Text",
-        "value": "BMA"
-    },
-    "codeICAO": {
-        "type": "Text",
-        "value": "ESSB"
-    },
-    "name": {
-        "type": "Text",
-        "value": "Bromma Stockholm Airport"
-    },
-    "alternateName": {
-        "type": "Text",
-        "value": "Stockholm Airport"
-    },
-    "address": {
-        "type": "PostalAddress",
-        "value": {
-            "addressCountry": "SE",
-            "addressLocality": "Stockholm"
-        }
-    },
-    "location": {
-        "type": "geo:json",
-        "value": {
-            "type": "Point",
-            "coordinates": [59.354444, 17.939722, 14]
-        }
+  "id": "airport-BMA",
+  "type": "Airport",
+  "codeIATA": {
+    "type": "Text",
+    "value": "BMA"
+  },
+  "codeICAO": {
+    "type": "Text",
+    "value": "ESSB"
+  },
+  "name": {
+    "type": "Text",
+    "value": "Bromma Stockholm Airport"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "Stockholm Airport"
+  },
+  "address": {
+    "type": "StructuredValue",
+    "value": {
+      "addressCountry": "SE",
+      "addressLocality": "Stockholm"
     }
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        59.354444,
+        17.939722,
+        14
+      ]
+    }
+  }
 }

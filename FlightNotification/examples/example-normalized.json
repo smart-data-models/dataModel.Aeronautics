@@ -1,24 +1,24 @@
 {
-    "id": "3732:2020-12-09T19:01:35.865Z",
-    "type": "FlightNotification",
-    "description": {
-        "type": "Text",
-        "value": "Delay of five minutes"
-    },
-    "state": {
-        "type": "Text",
-        "value": "active"
-    },
-    "dateIssued": {
-        "type": "DateTime",
-        "value": "2020-12-09T19:01:35.865Z"
-    },
-    "belongsToFlight": {
-        "type": "Relationship",
-        "value": "flight-3732"
-    },
-    "dataProvider": {
-        "type": "Text",
-        "value": "Employee 001"
-    }
+  "id": "3732:2020-12-09T19:01:35.865Z",
+  "type": "FlightNotification",
+  "description": {
+    "type": "Text",
+    "value": "Delay of five minutes"
+  },
+  "state": {
+    "type": "Text",
+    "value": "active"
+  },
+  "dateIssued": {
+    "type": "DateTime",
+    "value": "2020-12-09T19:01:35.865Z"
+  },
+  "belongsToFlight": {
+    "type": "Text",
+    "value": "flight-3732"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Employee 001"
+  }
 }

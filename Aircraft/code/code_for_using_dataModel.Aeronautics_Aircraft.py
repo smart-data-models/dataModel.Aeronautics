@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Aircraft"
 subject = "dataModel.Aeronautics"
-belongsToAircraftModel = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200'}"
+belongsToAircraftModel = "urn:ngsi-ld:AircraftModel:aircraftModel-AirbusA310-200"
 attribute = "belongsToAircraftModel"
 value = belongsToAircraftModel
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dateIssued = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2020-12-09T19:01:35.865Z'}}"
+dateIssued = "2020-12-09T19:01:35.865Z"
 attribute = "dateIssued"
 value = dateIssued
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-heading = {'type': 'Property', 'value': 45}
+heading = 45
 attribute = "heading"
 value = heading
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-isOnGround = {'type': 'Property', 'value': False}
+isOnGround = False
 attribute = "isOnGround"
 value = isOnGround
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it

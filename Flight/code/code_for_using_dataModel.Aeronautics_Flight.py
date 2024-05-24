@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Flight"
 subject = "dataModel.Aeronautics"
-arrivesToAirport = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:Airline:airport-MAD'}"
+arrivesToAirport = "urn:ngsi-ld:Airline:airport-MAD"
 attribute = "arrivesToAirport"
 value = arrivesToAirport
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-belongsToAirline = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:Airline:airline-SN'}"
+belongsToAirline = "urn:ngsi-ld:Airline:airline-SN"
 attribute = "belongsToAirline"
 value = belongsToAirline
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dateArrival = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2018-12-01T12:40:01.00Z'}}"
+dateArrival = "2018-12-01T12:40:01.00Z"
 attribute = "dateArrival"
 value = dateArrival
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dateDeparture = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2018-12-01T10:40:01.00Z'}}"
+dateDeparture = "2018-12-01T10:40:01.00Z"
 attribute = "dateDeparture"
 value = dateDeparture
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it

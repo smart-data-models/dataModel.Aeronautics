@@ -1,301 +1,145 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
-    "modelTags": "",
-    "$id": "https://smart-data-models.github.io/dataModel.Aeronautics/Flight/schema.json",
-    "title": "Smart Data models - Flight schema",
-    "description": "A description of a generic flight",
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.3.4",
+  "modelTags": "IUDX",
+  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
+  "title": "Weather Observed schema - Smart Data Models",
+  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "WeatherObserved"
+          ],
+          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
         },
-        {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        "dateObserved": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
         },
-        {
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "Flight"
-                    ],
-                    "description": "Property. NGSI Entity type. It has to be Flight"
-                },
-                "flightNumber": {
-                    "type": "string",
-                    "pattern": "^[A-Z0-9]{1,}$",
-                    "description": "Property. Model:'http://schema.org/Text'. Flight identifier without information of airline"
-                },
-                "flightNumberIATA": {
-                    "type": "string",
-                    "pattern": "^[A-Z0-9]{3,}$",
-                    "description": "Property. Model:'http://schema.org/Text'. IATA flight identifier"
-                },
-                "flightNumberICAO": {
-                    "type": "string",
-                    "pattern": "^[A-Z]{3}[A-Z0-9]{1,}$",
-                    "description": "Property. Model:'http://schema.org/Text'. ICAO flight identifier"
-                },
-                "flightType": {
-                    "type": "string",
-                    "enum": [
-                        "S",
-                        "N",
-                        "G",
-                        "M",
-                        "X"
-                    ],
-                    "description": "Property. Model:'http://schema.org/Text'. Flight type described as ICAO doc 4444 Appendix 2. Enum:'S, N, G, M, X'"
-                },
-                "state": {
-                    "type": "string",
-                    "enum": [
-                        "scheduled",
-                        "active",
-                        "unknown",
-                        "redirected",
-                        "landed",
-                        "diverted",
-                        "cancelled"
-                    ],
-                    "description": "Property. Model:'http://schema.org/Text'. Current state of the flight. Enum:'scheduled, active, unknown, redirected, landed, diverted, cancelled'"
-                },
-                "passengerCount": {
-                    "type": "integer",
-                    "minimum": 0,
-                    "description": "Property. Model:'http://schema.org/Integer'. Number of flight passengers"
-                },
-                "dateDeparture": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Departure date of the flight"
-                },
-                "dateArrival": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Arrival date of the flight"
-                },
-                "dateSOBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Scheduled Off-Block Time"
-                },
-                "dateEOBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Estimated Off-Block Time"
-                },
-                "dateTOBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Target Off-Block Time"
-                },
-                "dateTSAT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Target Start Up Approval Time"
-                },
-                "dateCOBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Calculated Off-Block Time"
-                },
-                "dateAOBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Actual Off-Block Time"
-                },
-                "dateEXOT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Estimated Taxi-Out Time"
-                },
-                "dateAXOT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Actual Taxi-Out Time"
-                },
-                "dateSTOT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Scheduled Take-Off Time"
-                },
-                "dateETOT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Estimated Take-Off Time"
-                },
-                "dateTTOT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Target Take-Off Time"
-                },
-                "dateCTOT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Calculated Take-Off Time"
-                },
-                "dateATOT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Actual Take-Off Time"
-                },
-                "dateETO": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Estimated Time Over"
-                },
-                "dateCTO": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Calculated Time Over"
-                },
-                "dateATO": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Actual Time Over"
-                },
-                "dateSLDT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Scheduled Landing Time"
-                },
-                "dateELDT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Estimated Landing Time"
-                },
-                "dateTLDT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Target Landing Time"
-                },
-                "dateCLDT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Calculated Landing Time"
-                },
-                "dateALDT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Actual Landing Time"
-                },
-                "dateEXIT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Estimated Taxi-In Time"
-                },
-                "dateAXIT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Actual Taxi-In Time"
-                },
-                "dateSIBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Scheduled In-Block Time"
-                },
-                "dateEIBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Estimated In-Block Time"
-                },
-                "dateTIBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Target In-Block Time"
-                },
-                "dateCIBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Calculated In-Block Time"
-                },
-                "dateAIBT": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://schema.org/DateTime'. Actual In-Block Time"
-                },
-                "hasAircraft": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri"
-                        }
-                    ],
-                    "description": "Relationship. Reference to the aircraft entity"
-                },
-                "hasAircraftModel": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri"
-                        }
-                    ],
-                    "description": "Relationship. Reference to the aircraft model entity"
-                },
-                "departsFromAirport": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri"
-                        }
-                    ],
-                    "description": "Relationship. Reference to the departure airport entity"
-                },
-                "arrivesToAirport": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri"
-                        }
-                    ],
-                    "description": "Relationship. Reference to the arrival airport entity"
-                },
-                "belongsToAirline": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri"
-                        }
-                    ],
-                    "description": "Relationship. Reference to the airline entity"
-                }
+        "precipitation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
+        },
+        "solarRadiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
+        },
+        "directIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
+        },
+        "diffuseIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
+        },
+        "pressureTendency": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "falling",
+                "raising",
+                "steady"
+              ]
+            },
+            {
+              "type": "number"
             }
+          ],
+          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
+        },
+        "dewPoint": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
+        },
+        "refDevice": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
+        },
+        "streamGauge": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
+        },
+        "snowHeight": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
+        },
+        "uVIndexMax": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
+        },
+        "aqiMajorPollutant": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
+        },
+        "aqiMajorPollutantForecast": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
+        },
+        "precipitationForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
+        },
+        "airQualityIndex": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
+        },
+        "relativeHumidityForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
+        },
+        "airQualityIndexForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureTSA": {
+          "type": "object",
+          "description": "Property. Air temperature time series aggregation",
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
-    ],
-    "required": [
-        "id",
-        "type"
-    ]
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "dateObserved",
+    "location"
+  ]
 }

@@ -15,7 +15,7 @@
         "arrivesToAirport": "https://smartdatamodels.org/dataModel.Aeronautics/arrivesToAirport",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "belongsToAircraftModel": "https://smartdatamodels.org/dataModel.Aeronautics/belongsToAircraftModel",
         "belongsToAirline": "https://smartdatamodels.org/dataModel.Aeronautics/belongsToAirline",
@@ -27,7 +27,7 @@
         "codeICAO": "https://smartdatamodels.org/dataModel.Aeronautics/codeICAO",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateAIBT": "https://smartdatamodels.org/dataModel.Aeronautics/dateAIBT",
@@ -77,7 +77,7 @@
         "id": "@id",
         "isOnGround": "https://smartdatamodels.org/dataModel.Aeronautics/isOnGround",
         "length": "https://smartdatamodels.org/dataModel.Aeronautics/length",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "maximumAllowedFuel": "https://smartdatamodels.org/dataModel.Aeronautics/maximumAllowedFuel",
         "maximumAllowedSpeed": "https://smartdatamodels.org/dataModel.Aeronautics/maximumAllowedSpeed",
         "mtow": "https://smartdatamodels.org/dataModel.Aeronautics/mtow",

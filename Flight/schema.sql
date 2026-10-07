@@ -1,6 +1,6 @@
 /* (Beta) Export of data model Flight of the subject dataModel.Aeronautics for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE flightType_type AS ENUM ('S', 'N', 'G', 'M', 'X');
-CREATE TYPE state_type AS ENUM ('scheduled', 'active', 'unknown', 'redirected', 'landed', 'diverted', 'cancelled');
+CREATE TYPE Flight_flightType_type AS ENUM ('S', 'N', 'G', 'M', 'X');
+CREATE TYPE Flight_state_type AS ENUM ('scheduled', 'active', 'unknown', 'redirected', 'landed', 'diverted', 'cancelled');
 CREATE TYPE Flight_type AS ENUM ('Flight');
 CREATE TABLE Flight (
   "address" JSON,
@@ -46,7 +46,7 @@ CREATE TABLE Flight (
   "flightNumber" TEXT,
   "flightNumberIATA" TEXT,
   "flightNumberICAO" TEXT,
-  "flightType" flightType_type,
+  "flightType" Flight_flightType_type,
   "hasAircraft" JSON,
   "hasAircraftModel" JSON,
   "id" TEXT PRIMARY KEY,
@@ -56,6 +56,6 @@ CREATE TABLE Flight (
   "passengerCount" NUMERIC,
   "seeAlso" JSON,
   "source" TEXT,
-  "state" state_type,
+  "state" Flight_state_type,
   "type" Flight_type
 );
